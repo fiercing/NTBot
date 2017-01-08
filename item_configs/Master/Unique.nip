@@ -18,7 +18,7 @@
 
 //UNIQUE BELTS\\
 [Name] == Sash && [Quality] == Unique && [Flag] != Ethereal																										//Lenymo
-[Name] == HeavyBelt && [Quality] == Unique && [Flag] != Ethereal									 																//GOLD WRAP
+//[Name] == HeavyBelt && [Quality] == Unique && [Flag] != Ethereal									 																//GOLD WRAP
 [Name] == DemonhideSash && [Quality] == Unique && [Flag] != Ethereal # [LifeLeech] == 8 && [DamageResist] == 15																	//STRING OF EARS
 //[Name] == SharkskinBelt && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 150																			//RAZORTAIL
 [Name] == BattleBelt && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] == 170																				//SNOWCLASH
@@ -39,7 +39,7 @@
 
 //UNIQUE HELMS
 [Name] == Cap && [Quality] == Unique && [Flag] != Ethereal																										//Biggin's Bonnet
-[Name] == SkullCap && [Quality] == Unique && [Flag] != Ethereal # [ItemMagicBonus] == 50																					//TARNHELM
+//[Name] == SkullCap && [Quality] == Unique && [Flag] != Ethereal # [ItemMagicBonus] == 50																					//TARNHELM
 //[Name] == WarHat && [Quality] == Unique																													//PEASANT CROWN
 //[Name] == Sallet && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 160 && [ColdResist] >= 40 && [FireResist] >= 50 && [LightResist] >= 40									//ROCK STOPPER
 [Name] == Sallet && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 200 && [ColdResist] >= 40 && [FireResist] >= 50 && [LightResist] >= 40										//Ethereal ROCK STOPPER

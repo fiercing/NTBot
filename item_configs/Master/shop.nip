@@ -115,6 +115,8 @@
 //=============================================================
 
 [Name] == BoneHelm && [Quality] == Magic # ([Sockets] == 2 || [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 30) && [ItemSkillOnGetHit] == 48
+//[Name] == Mask # [Sockets] == 3
+//[Name] == BoneHelm # [Sockets] == 3
 
 //=============================================================
 //************ Weapons *****************************************

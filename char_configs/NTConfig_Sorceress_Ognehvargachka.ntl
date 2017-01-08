@@ -399,10 +399,10 @@ function NT_LoadConfig()
 	NTConfig_FreeSpace = 4;								// Number of free columns. If bot has less than this amount after id'ing, it will go to stash.
 
 	// These numbers correspond to your inventory. Set 0 to keep whatever is there, 1 to have the bot manage the slot.
-	NTConfig_Columns[0] = [1,1,1,1,1,1,1,0,0,0];
-	NTConfig_Columns[1] = [1,1,1,1,1,1,1,0,0,0];
-	NTConfig_Columns[2] = [1,1,1,1,1,1,1,0,0,0];
-	NTConfig_Columns[3] = [1,1,1,1,1,1,1,0,0,0];
+	NTConfig_Columns[0] = [1,1,1,1,1,1,0,0,0,0];
+	NTConfig_Columns[1] = [1,1,1,1,1,1,0,0,0,0];
+	NTConfig_Columns[2] = [1,1,1,1,1,1,0,0,0,0];
+	NTConfig_Columns[3] = [1,1,1,1,1,1,0,0,0,0];
 
 	NTConfig_MinGoldToStash = 100000;					// Maximum gold amount carried before going to stash
 
@@ -646,7 +646,7 @@ function NT_LoadConfig()
 	NTConfig_ClearPosition = false;						// Set true if you want to clear area after killing boss.
 	NTConfig_PrioritizeWeakerFoes = false;				// Enable to kill weaker foes with higher priority as well as clear areas of minions and other foes prior to killing bosses
 	NTConfig_PrioritizeWeakerFoesAreaDisable = [];		// Use IDs from D2NT\sdk\areas.txt to disable for specific areas, e.g. [124,83] would disable Nihlathak and Travincial
-	NTConfig_SwitchTele = false; 						// Use tab 2 for teleporting (higher fcr breakpoint in tab 2)? (Slight chance of breaking an eth cta spirit.)
+	NTConfig_SwitchTele = true; 						// Use tab 2 for teleporting (higher fcr breakpoint in tab 2)? (Slight chance of breaking an eth cta spirit.)
 	NTConfig_PreBuffFade = false; 						// Stand in fire until fade is triggered? (Must have Last Wish / Treachery etc.)
 	NTConfig_StopIfStashInventoryFull = false;    		// Pauses bot when stash/inventory are full. (Helpful for HardCore players.) Must configure NTConfig_FreeRowsQuit below.
 	NTConfig_FreeRowsQuit = 2;							// If after stashing less than this number of inventory columns are free, bot will pause.

@@ -39,7 +39,7 @@
 //RUNES
 //[Name] == ElRune # # [MaxQuantity] == 3
 //[Name] == EldRune # # [MaxQuantity] == 3
-[Name] == TirRune # # [MaxQuantity] == 15
+//[Name] == TirRune # # [MaxQuantity] == 15
 //[Name] == NefRune # # [MaxQuantity] == 3
 //[Name] == EthRune # # [MaxQuantity] == 3
 //[Name] == IthRune # # [MaxQuantity] == 3
