@@ -59,7 +59,7 @@
 [Name] == SerpentskinArmor && [Quality] == Unique # [ColdResist] == 35																								//SKIN OF THE VIPERMAGI
 //[Name] == Cuirass && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 190																				//DURIEL'S SHELL
 //[Name] == Cuirass && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 190																				//Ethereal DURIEL'S SHELL
-[Name] == MeshArmor && [Quality] == Unique # [EnhancedDefense] >= 210																								//SHAFTSTOP
+[Name] == MeshArmor && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 210																								//SHAFTSTOP
 [Name] == RussetArmor && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 190																				//SKULLDER'S IRE
 [Name] == TemplarCoat && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 195																								//GUARDIAN ANGEL
 //[Name] == SharktoothArmor && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 215																			//TOOTHROW
