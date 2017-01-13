@@ -446,7 +446,7 @@ function NT_LoadConfig()
 	NTConfig_NIPFilePath.push("Master/Charms.nip");
 	NTConfig_NIPFilePath.push("Master/Crafted.nip");
 	NTConfig_NIPFilePath.push("Master/Cubed.nip");
-	NTConfig_NIPFilePath.push("Master/CustomAdditions.nip");
+	//NTConfig_NIPFilePath.push("Master/CustomAdditions.nip");
 	//NTConfig_NIPFilePath.push("Master/FAST.nip");
 	NTConfig_NIPFilePath.push("Master/Gold Potions Runes Gems Essences Keys Organs.nip");
 	NTConfig_NIPFilePath.push("Master/Magic.nip");
