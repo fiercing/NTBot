@@ -77,8 +77,8 @@
 [Name] == Monarch && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 4																								//Spirit, Phoenix
 
 //WHITE HELMS
-[Name] == Mask && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 3
-[Name] == BoneHelm && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 3
+//[Name] == Mask && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 3
+//[Name] == BoneHelm && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 3
 //[Name] == GrandCrown && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 160 && [Sockets] == 0								//Dream
 //[Name] == GrandCrown && [Quality] == Superior && [Flag] != Ethereal # [EnhancedDefense] == 15 && ([Sockets] == 0 || [Sockets] == 3)	//Dream
 //[Name] == Demonhead && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 220 && [Sockets] == 0								//Dream
