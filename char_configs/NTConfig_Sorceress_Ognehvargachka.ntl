@@ -12,7 +12,17 @@ function NT_LoadConfig()
 	// -----------------------------------------------------------------------------------------------------
 
 	//NTConfig_Script.push("ConfigCheck.ntj"); 			// This must be commented out & serves to prevent unconfigured characters from running.
+	NTConfig_Script.push("NTCatacombs.ntj");
+		NTConfig_ClearAllCatacombs = 0;					// 0 : Andy only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_PositionAndy = 2;						// 0 : right wall, 1 : left wall, 2 : very close, 3 : andy dodge, 4 : out of andy range
+		NTConfig_ClearAndarielThrone = false;			// Set to true to clear the throne room after Andy, false if not
 
+	NTConfig_Script.push("NTFrigidHighlands.ntj");
+		NTConfig_ClearFrigidHighlands = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_KillEldritch = true;					// Set true to kill Eldritch, false if not
+		NTConfig_KillSharptooth = false;			 	// Set true to kill Sharptooth Slayer, false if not
+		NTConfig_KillEyeBack = false;				 	// Set true to kill Eyeback The Unleashed, false if not
+		NTConfig_ClearAbaddon = -1;						// 0 : Chest Only, 1 : Clear Path 2 : Clear All
 	//------------------------------------------------------------------------------>>
 	// Etal Clone Hunter Options.
 	//------------------------------------------------------------------------------>>
@@ -26,20 +36,20 @@ function NT_LoadConfig()
 	//-------------------------------------------------------------------------------
 	// 		Level announcer
 	//-------------------------------------------------------------------------------
-	NTConfig_Announcer = false;								// Run the level announcer
-	NTConfig_LevelMin = 50;									// Lowest level to announce a level up
-	NTConfig_Output = "Congrats on level";					// What to say on level up
-	NTConfig_LogIt = true;									// log every level up
+	//NTConfig_Announcer = false;								// Run the level announcer
+	//NTConfig_LevelMin = 50;									// Lowest level to announce a level up
+	//NTConfig_Output = "Congrats on level";					// What to say on level up
+	//NTConfig_LogIt = true;									// log every level up
 
 	//------------------------------------------------------------------------------
 	// Leech, Leech Fighter & Team Botting Settings
 	//------------------------------------------------------------------------------
 
-	NTConfig_Leader = "config me";						// Leaders name. (Don't set to yourself.)
+	NTConfig_Leader = "Chicho_Gosho";						// Leaders name. (Don't set to yourself.)
 	NTConfig_PartyOnlyLeader = false;					// Party only with leader (NTConfig_Leader)? (If true, NTConfig_PublicMode MUST be set false in the general config section below).
 	NTConfig_PartyMaxTime = 20;							// Time in seconds the leecher has to party with leader before exiting game
-	NTConfig_LeechBo = false; 							// Set false to disable BO & BC cast by leecher.
-	NTConfig_LeechExitDelay = 500;						// Delay before leecher exits game after leader in milliseconds.  Use this to stagger leechers exit times to avoid crashes.
+	NTConfig_LeechBo = true; 							// Set false to disable BO & BC cast by leecher.
+	NTConfig_LeechExitDelay = 1000;						// Delay before leecher exits game after leader in milliseconds.  Use this to stagger leechers exit times to avoid crashes.
 
 	//NTConfig_Script.push("NTLeechCows.ntj");			// Leech fighter cow script.  Must run leader with NTCow.ntj
 		NTConfig_WaitForCowPortal = 240;				// time in seconds to wait for the leader to make cow portal before aborting the script
@@ -49,18 +59,22 @@ function NT_LoadConfig()
 	//NTConfig_Script.push("NTTravLeech.ntj");			// Trav Leecher (NTConfig_Leader must be configured above).
 		NTConfig_TakeTpTravincal = "config me";			// This must match leaders LeechTrav_TakeTp & must be different than Diablo & Baal tp messages.
 
-	//NTConfig_Script.push("NTUniversalDiabloLeech.ntj");	// (NTConfig_Leader must be configured above).
-		NTConfig_LeechChaos = 0;						// 0 = Portal Leecher, 1 = Leech follow, 2 = Leech Fighter  (leech portals).
+	NTConfig_Script.push("NTUniversalDiabloLeech.ntj");	// (NTConfig_Leader must be configured above).
+		NTConfig_LeechChaos = 2;						// 0 = Portal Leecher, 1 = Leech follow, 2 = Leech Fighter  (leech portals).
 		NTConfig_followDelay = 8000;					// Delay in milliseconds to enter follow portal
 		NTConfig_Chaosleechpos = [7763, 5267];			//  Hide location for Passive leecher alternate [7767, 5263];
-		NTConfig_TakeTpDiablo = "config me";			// Message from leader signifying you to take portal. (Must be different than Baal & Trav tp messages.)
+		NTConfig_TakeTpDiablo = "TP up.";			// Message from leader signifying you to take portal. (Must be different than Baal & Trav tp messages.)
 		NTConfig_UseChatCommandPortal = true;			// Use portal after TakeTpDiablo message? (False will attempt taking first TP made by leader, ignores TakeTpDiablo.)
 
-	//NTConfig_Script.push("NTUniversalBaalLeech.ntj");
+	NTConfig_Script.push("NTBloodyFoothills.ntj");
+		NTConfig_ClearBloodyFoothills = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_BloodyFoothillsBoss = 0;				// 0 : Shenk, 1: Dac Farren, 2 : Both, -1 : Disable
+
+	NTConfig_Script.push("NTUniversalBaalLeech.ntj");
 		NTConfig_LeechBaal = 1; 						// 1 = Leech Fighter (Tele), 2 = Leech Fighter (Walking), 3 = Passive Leecher (Corner dunce).
-		NTConfig_TakeTpBaal = "config me";				// Message from leader signifying you to take portal. (Must be different than Diablo & Trav tp messages.)
+		NTConfig_TakeTpBaal = "TP up.";				// Message from leader signifying you to take portal. (Must be different than Diablo & Trav tp messages.)
 		NTConfig_LeechPrecast = false; 					// Do you want your leecher to precast?
-		NTConfig_TeleEachWaveHelper = false;            // Teleport bot before each wave to keep merc close (not position based yet)?
+		NTConfig_TeleEachWaveHelper = true;            // Teleport bot before each wave to keep merc close (not position based yet)?
 		leechpos = [15118, 5003];						// X,Y coord for leechers to stand (passive leecher only).
 		NTConfig_LeechHydra = 0; 						// 0 = Don't Move, 1 = Right Side, 2 = Left Side. (Use left side if you have a leecher grabing xp shrines. (Settings Below))
 		NTConfig_FollowtoWorldStone = true;				// Go down to Baal in WS Chamber after waves?
@@ -136,10 +150,6 @@ function NT_LoadConfig()
 	//NTConfig_Script.push("NTInnerCloister.ntj");
 		NTConfig_ClearInnerCloister = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearCathedral = -1;					// 0 : Boneash Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
-	NTConfig_Script.push("NTCatacombs.ntj");
-		NTConfig_ClearAllCatacombs = 0;					// 0 : Andy only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_PositionAndy = 2;						// 0 : right wall, 1 : left wall, 2 : very close, 3 : andy dodge, 4 : out of andy range
-		NTConfig_ClearAndarielThrone = false;			// Set to true to clear the throne room after Andy, false if not
 
 	//NTConfig_Script.push("NTMooMooFarm.ntj");			// There are currently NO options for this script, still working on it
 		NTConfig_CowKingChicken = 95;  					// percentage of king's hp if below this the bot will close d2.  Set to 0 to dissable.  Note that this has a limited range will NOT help in pubs
@@ -175,11 +185,11 @@ function NT_LoadConfig()
 		NTConfig_ClearHarem2 = 0;						// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearPalaceCellar = -1; 				// 0 : Fire Eye only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 	//NTConfig_Script.push("NTArcaneSanctuary.ntj");
-		NTConfig_ClearArcaneSanc = -1;					// 0 : Summoner Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_ClearArcaneSanc = 0;					// 0 : Summoner Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_OpenSummonerChests = false; 			// Set true to open the chests on the 3 Non-Summoner corners
 	//NTConfig_Script.push("NTCanyonOfMagi.ntj");
-		NTConfig_ClearMagiCanyon = 1; 					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_RaidTombs = -1; 						// 0 : Duriel Only, 1 : Chests Only, 2 : Clear Only, 3 : Everything, -1 : Disable
+		NTConfig_ClearMagiCanyon = 0; 					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_RaidTombs = 0; 						// 0 : Duriel Only, 1 : Chests Only, 2 : Clear Only, 3 : Everything, -1 : Disable
 		NTConfig_AvoidDuriel = false;					// Set true to use Duriel avoidance trick, false if not
 
 	//------------------------------------------------------------------------------
@@ -214,7 +224,7 @@ function NT_LoadConfig()
 		NTConfig_ClearRuinedFane = 1;					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearDisusedReliquary = 1;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearTravincal = 0;					// 0 : Council Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
-	NTConfig_Script.push("NTDuranceOfHate.ntj");
+	//NTConfig_Script.push("NTDuranceOfHate.ntj");
 		NTConfig_ClearDury = 0;							// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_KillDuryCouncil = false;				// Set to true to kill Council, false if not
 		NTConfig_KillMeph = true;						// Set to true to kill Mephisto, false if not
@@ -254,15 +264,6 @@ function NT_LoadConfig()
 	// Act 5 Scripts
 	//------------------------------------------------------------------------------------
 
-	//NTConfig_Script.push("NTBloodyFoothills.ntj");
-		NTConfig_ClearBloodyFoothills = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_BloodyFoothillsBoss = -1;				// 0 : Shenk, 1: Dac Farren, 2 : Both, -1 : Disable
-	NTConfig_Script.push("NTFrigidHighlands.ntj");
-		NTConfig_ClearFrigidHighlands = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_KillEldritch = true;					// Set true to kill Eldritch, false if not
-		NTConfig_KillSharptooth = false;			 	// Set true to kill Sharptooth Slayer, false if not
-		NTConfig_KillEyeBack = false;				 	// Set true to kill Eyeback The Unleashed, false if not
-		NTConfig_ClearAbaddon = -1;						// 0 : Chest Only, 1 : Clear Path 2 : Clear All
 	//NTConfig_Script.push("NTArreatPlateau.ntj");
 		NTConfig_ClearArreatPlateau = 0;				// 0 : Thresh Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 		NTConfig_ArreatEvilUrn = false;					// Set true to open Evil Urn, false if not
@@ -270,7 +271,7 @@ function NT_LoadConfig()
 	//NTConfig_Script.push("NTCrystallinePassage.ntj");
 		NTConfig_ClearCrystalline = 0;					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearFrozenRiver = 0;					// 0 : Frozenstein Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
-	NTConfig_Script.push("NTNihlathaksTemple.ntj");
+	//NTConfig_Script.push("NTNihlathaksTemple.ntj");
 		NTConfig_UseTemplePortal = true; 				// Use red portal in act 5? (Set false for waypoint.)
 		NTConfig_KillPindleskin = true; 				// Set true to kill Pindleskin, false if not
 		NTConfig_KillNihlathak = false;					// Set true to kill Nihlathak, false if not
@@ -614,7 +615,7 @@ function NT_LoadConfig()
 	//------------------------------------------------------------------------------
 	NTConfig_Gamble = true;							// Enable gambling?
 	NTConfig_GambleStartGold = 2500000;					// Gold amount to start the gambling.
-	NTConfig_GambleStopGold = 300000;					// Gold amount to stop the gambling.
+	NTConfig_GambleStopGold = 1500000;					// Gold amount to stop the gambling.
 
 	NTConfig_GC = false;								// Enable gambling for craft amulet. This will keep one amulet for crafting on you when possible. Requires char lvl >= 88.
 	NTConfig_GCAmuGold = 300000;						// Gold amount to stop gambling for amulet to craft.
@@ -633,7 +634,7 @@ function NT_LoadConfig()
 	//------------------------------------------------------------------------------
 	// General configuration
 	//------------------------------------------------------------------------------
-	NTConfig_PublicMode = false;						// Enables "Public" features (Partying, Tp'ing etc). (Cannot be true while NTConfig_PartyOnlyLeader is.)
+	NTConfig_PublicMode = true;						// Enables "Public" features (Partying, Tp'ing etc). (Cannot be true while NTConfig_PartyOnlyLeader is.)
 	NTConfig_CheckCloneDiablo = true;					// Set to true if you want to wait in game after "Diablo Walks the Earth" msg.
 	NTConfig_SoJWaitTime = 5;							// Time in minutes to wait for the next SoJ sale. Set to 0 to disable SoJ notifier.
 	NTConfig_KillDclone = false; 						// set to true if you want char to kill DClone
@@ -646,7 +647,7 @@ function NT_LoadConfig()
 	NTConfig_ClearPosition = false;						// Set true if you want to clear area after killing boss.
 	NTConfig_PrioritizeWeakerFoes = false;				// Enable to kill weaker foes with higher priority as well as clear areas of minions and other foes prior to killing bosses
 	NTConfig_PrioritizeWeakerFoesAreaDisable = [];		// Use IDs from D2NT\sdk\areas.txt to disable for specific areas, e.g. [124,83] would disable Nihlathak and Travincial
-	NTConfig_SwitchTele = true; 						// Use tab 2 for teleporting (higher fcr breakpoint in tab 2)? (Slight chance of breaking an eth cta spirit.)
+	NTConfig_SwitchTele = false; 						// Use tab 2 for teleporting (higher fcr breakpoint in tab 2)? (Slight chance of breaking an eth cta spirit.)
 	NTConfig_PreBuffFade = false; 						// Stand in fire until fade is triggered? (Must have Last Wish / Treachery etc.)
 	NTConfig_StopIfStashInventoryFull = false;    		// Pauses bot when stash/inventory are full. (Helpful for HardCore players.) Must configure NTConfig_FreeRowsQuit below.
 	NTConfig_FreeRowsQuit = 2;							// If after stashing less than this number of inventory columns are free, bot will pause.
@@ -664,9 +665,9 @@ function NT_LoadConfig()
 	NTConfig_MuleInv = 2; 								// Set this to the free column limit in your Inventory. If less than this mule. Must be set to higher than NTConfig_FreeSpace
  	NTConfig_UseKeysForPlaceHolder = false;				// Set to true to keep a key in your inventory. (In the event that the bot has no space for ID scrolls, will sell the key instead of one of your items.)
 
-	NTConfig_Telekinesis = false;						// Try to use Telekinesis skill on waypoint, stash, portals (in town) & while picking up potions/gold.
-	NTConfig_SwitchCastSorc = false;					// Using a memory staff?
-	NTConfig_PropsForEtal = 1; 							// Advertising etal at the end of public games.  set to 0 to disable.  Set to 1 or greater for the number of phrases spoken before exiting public games.  See D2NT\scripts\NTBot\char_configs\EtalPR.ntl for instructions on adding or removing phrases
+	NTConfig_Telekinesis = true;						// Try to use Telekinesis skill on waypoint, stash, portals (in town) & while picking up potions/gold.
+	NTConfig_SwitchCastSorc = true;					// Using a memory staff?
+	NTConfig_PropsForEtal = 0; 							// Advertising etal at the end of public games.  set to 0 to disable.  Set to 1 or greater for the number of phrases spoken before exiting public games.  See D2NT\scripts\NTBot\char_configs\EtalPR.ntl for instructions on adding or removing phrases
 	NTConfig_MercStats = true;							// Prints Merc stats to Common Log with Char stats if true
 	NTConfig_VoyageToMissingWps = true; 				// when missing a wp setting this to true will have the bot path to and grab the missing wp
 
@@ -699,7 +700,7 @@ function NT_LoadConfig()
 	//-------------------------------------------------------------------------------
 	// Immunity Skipping
 	//-------------------------------------------------------------------------------
-	NTConfig_AreasToNotSkipImmunes = [121];		// Add area ID's into the array seperated by "," for to disable immunity skipping within said area.
+	NTConfig_AreasToNotSkipImmunes = [];		// Add area ID's into the array seperated by "," for to disable immunity skipping within said area.
 
 	NTConfig_SkipSingle[0] = false;						//Skips all physical immunes.
 	NTConfig_SkipSingle[1] = false;						//Skips all magic immunes.
@@ -802,15 +803,15 @@ function NT_LoadConfig()
 	NTConfig_DancingSorc = false;						// Periodically teleport between attacks, settings below.
 	NTConfig_AttackJump = 5;							// # of attacks before teleporting.
 	NTConfig_BounceRange = 9;							// Range away from mob to keep when teleporting.
-	NTConfig_DanceStartHp = 78;  						// Auto dance if below this % health? (Set -1 to disable, 101 to always.)
+	NTConfig_DanceStartHp = -1;  						// Auto dance if below this % health? (Set -1 to disable, 101 to always.)
 	NTConfig_DanceStartMp = -1;							// Auto dance if below this % mana? (Set -1 to disable, 101 to always.)
 
-	NTConfig_DiaSpam = 0;			// Skill to spam before Diablo Spawns
-	NTConfig_SetDiablo = 0;			// leechers (only) stop attacking Diablo after x% - valid values 0 to 100
-	NTConfig_SetBaal = 0;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
+	NTConfig_DiaSpam = 56;			// Skill to spam before Diablo Spawns
+	NTConfig_SetDiablo = 40;			// leechers (only) stop attacking Diablo after x% - valid values 0 to 100
+	NTConfig_SetBaal = 40;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
 
 	prewavespot = [15092, 5040];							// Pre-Wave standing (X,Y) coordinates. (For Baal Scripts.)
-	NTConfig_PreWaveSpam = 0;								// Attack skill to spam between waves.  Set "0" to disable.
+	NTConfig_PreWaveSpam = 56;								// Attack skill to spam between waves.  Set "0" to disable.
 	KBLSpamPos = [15090, 5028, 15099, 5028, 15093, 5028];	// (X,Y) coordinates to attack with NTConfig_PreWaveSpam.
 
 

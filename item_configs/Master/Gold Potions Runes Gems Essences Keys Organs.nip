@@ -52,11 +52,11 @@
 //[Name] == ShaelRune # # [MaxQuantity] == 3
 //[Name] == DolRune # # [MaxQuantity] == 3
 //[Name] == HelRune # # [MaxQuantity] == 3
-[Name] == IoRune # # [MaxQuantity] == 3
-[Name] == LumRune # # [MaxQuantity] == 3
-[Name] == KoRune # # [MaxQuantity] == 3
-[Name] == FalRune # # [MaxQuantity] == 3
-[Name] == LemRune # # [MaxQuantity] == 3
+//[Name] == IoRune # # [MaxQuantity] == 3
+//[Name] == LumRune # # [MaxQuantity] == 3
+//[Name] == KoRune # # [MaxQuantity] == 3
+//[Name] == FalRune # # [MaxQuantity] == 3
+//[Name] == LemRune # # [MaxQuantity] == 3
 [Name] == PulRune # # [MaxQuantity] == 5
 [Name] == UmRune # # [MaxQuantity] == 5
 [Name] == MalRune # # [MaxQuantity] == 5

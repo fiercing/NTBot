@@ -209,12 +209,12 @@ function NT_LoadConfig()
 		NTConfig_ClearUpper = 0;						// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_UpperChests = false;					// Set to true to grab chests, false if not
 	//NTConfig_Script.push("NTTravincal.ntj");
-		NTConfig_ClearRuinedFane = 1;					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_ClearDisusedReliquary = 1;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_ClearRuinedFane = 0;					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_ClearDisusedReliquary = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearTravincal = 0;					// 0 : Council Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 	//NTConfig_Script.push("NTDuranceOfHate.ntj");
 		NTConfig_ClearDury = 0;							// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_KillDuryCouncil = false;				// Set to true to kill Council, false if not
+		NTConfig_KillDuryCouncil = true;				// Set to true to kill Council, false if not
 		NTConfig_KillMeph = true;						// Set to true to kill Mephisto, false if not
 		NTConfig_RedPortal = true;;						// Set to true to use Red Portal, false if not
 
@@ -241,10 +241,10 @@ function NT_LoadConfig()
 	// "Public Diablo Settings" //
 	//--------------------------//
 
-	NTConfig_CS_SafeTP 			= "Chaos TP up.";			// Message for the Safe TP
-	NTConfig_CS_HotTP 			= "Chaos Hot TP.";			// Message for the Hot TP
+	NTConfig_CS_SafeTP 			= "TP up.";			// Message for the Safe TP
+	NTConfig_CS_HotTP 			= "TP up.";			// Message for the Hot TP
 	NTConfig_CS_NextGame		= "New Game Is ";			// Message after Diablo is dead
-	NTConfig_CS_LeechSupTP		= "Leech TP up.";			// Message for LeechSupport
+	NTConfig_CS_LeechSupTP		= "TP up.";			// Message for LeechSupport
 	NTConfig_CS_SealBasher		= "Don't hit the seals.";	// Message if people hit seals (Seal bashers, lol)
 
 	//-----------------------------------------------------------------------------------
@@ -285,8 +285,8 @@ function NT_LoadConfig()
 		NTConfig_ClearIcyCellar = 0;					// 0 : SnapChip Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 	NTConfig_Script.push("NTWorldstoneKeep.ntj");
 		NTConfig_ClearWorldStoneKeep = 0;				// 0 : Baal Run Only, 1 : Clear Path 2 : Clear All (From Waypoint)
-		NTConfig_MakeWSK3TP = false; 					// Make WS3 TP for help clearing the Throne
-		NTConfig_CheckSoulKillers = false; 				// End script if Stygian Dolls are found in Throne
+		NTConfig_MakeWSK3TP = true; 					// Make WS3 TP for help clearing the Throne
+		NTConfig_CheckSoulKillers = true; 				// End script if Stygian Dolls are found in Throne
 		NTConfig_MakeHotTP = true; 						// Make a hot TP before clearing Throne
 		NTConfig_PreWaveTele = false; 					// Teleport before wave to keep merc close
 		NTConfig_HolyBoltBaal = false;		 			// Use Holy Bolt on wave 2 magic immunes
@@ -301,11 +301,11 @@ function NT_LoadConfig()
 	//------------------------\\
 
 	NTThrone_Announce = true; 											// Announce mobs in the Throne room pre-tp?
-	Baal_WSK3_TP_MSG = "TP for WS lvl 3 up, help me clear throne";		// Message for portal in WS lvl 3. (Clears throne faster with help.)
+	Baal_WSK3_TP_MSG = "TP up.";		// Message for portal in WS lvl 3. (Clears throne faster with help.)
 	Baal_HotTp = "TP up.";												// Hot TP message. (NTConfig_MakeHotTP must be set true.)
 	Baal_SafeTp = "TP safe.";											// What to say when bot opens the safe TP.
 	Baal_KillBaalMessage = "Let's kill Baal!";							// What to say after last wave, before entering chamber.
-	Baal_NextGameMessage = "Etal Bot - ProjectEtal.com";				// What to say after killing Baal. (We appriciate those who leave the shameless plug.)
+	Baal_NextGameMessage = "";				// What to say after killing Baal. (We appriciate those who leave the shameless plug.)
 	Baal_FreeSpaceMessage = "Towning to clear space";  					// Used with NTConfig_FreeSpaceBeforeBaal for message before going to town to clear inventory
 	Baal_BSayNextGame = "Next game will be ";							// Message before announcing next game.  "Next game will be chaos" for example. (Leave empty to disable.)
 
@@ -611,9 +611,9 @@ function NT_LoadConfig()
 	// Gamble Configuration
 	// 		* To specify what items to gamble, adjust the array with the desired item codes.
 	//------------------------------------------------------------------------------
-	NTConfig_Gamble = false;							// Enable gambling?
-	NTConfig_GambleStartGold = 2000000;					// Gold amount to start the gambling.
-	NTConfig_GambleStopGold = 300000;					// Gold amount to stop the gambling.
+	NTConfig_Gamble = true;							// Enable gambling?
+	NTConfig_GambleStartGold = 2500000;					// Gold amount to start the gambling.
+	NTConfig_GambleStopGold = 1500000;					// Gold amount to stop the gambling.
 
 	NTConfig_GC = false;								// Enable gambling for craft amulet. This will keep one amulet for crafting on you when possible. Requires char lvl >= 88.
 	NTConfig_GCAmuGold = 300000;						// Gold amount to stop gambling for amulet to craft.
@@ -662,7 +662,7 @@ function NT_LoadConfig()
 	NTConfig_MuleStash = 8; 							// Set this to the free block limit in your Stash. If less than this mule.
 	NTConfig_MuleInv = 2; 								// Set this to the free column limit in your Inventory. If less than this mule. Must be set to higher than NTConfig_FreeSpace
  	NTConfig_UseKeysForPlaceHolder = true;				// Set to true to keep a key in your inventory. (In the event that the bot has no space for ID scrolls, will sell the key instead of one of your items.)
-	NTConfig_PropsForEtal = 1; 							// Advertising etal at the end of public games.  set to 0 to disable.  Set to 1 or greater for the number of phrases spoken before exiting public games.  See D2NT\scripts\NTBot\char_configs\EtalPR.ntl for instructions on adding or removing phrases
+	NTConfig_PropsForEtal = 0; 							// Advertising etal at the end of public games.  set to 0 to disable.  Set to 1 or greater for the number of phrases spoken before exiting public games.  See D2NT\scripts\NTBot\char_configs\EtalPR.ntl for instructions on adding or removing phrases
 	NTConfig_MercStats = false;							// Prints Merc stats to Common Log with Char stats if true
 	NTConfig_VoyageToMissingWps = true; 				// when missing a wp setting this to true will have the bot path to and grab the missing wp
 
@@ -733,11 +733,11 @@ function NT_LoadConfig()
 								"free item on ground ",
 							];
 
-	NTConfig_IdentAtCain = false;						// Identify @ Cain? (Quicker & will skip using cain if something in inventory is suppose to be kept unidentified. Will not log sold items.)
+	NTConfig_IdentAtCain = true;						// Identify @ Cain? (Quicker & will skip using cain if something in inventory is suppose to be kept unidentified. Will not log sold items.)
 	NTConfig_PocketChange = 500000;						// Amount of gold you want to keep on hand used for repairs. Make adjustments to this & repair % to keep equipment from breaking.
 	NTConfig_DontCainAct = [];							// List any act you don't want to use cain on seperated by ",".  Set to "0" to id in all acts.
 	NTConfig_Repair = "60";								// Set to how much durability you want to repair at, 40 is normal, 99 is as soon as you loose one point.
-	NTConfig_AlwaysUseCain = false;						// Always use cain to ID? (Will ID items which are set to keep unid if they are in the inventory when visiting Cain.)
+	NTConfig_AlwaysUseCain = true;						// Always use cain to ID? (Will ID items which are set to keep unid if they are in the inventory when visiting Cain.)
 	NTConfig_DropCainItems = false;						// set to true to drop items/false sells them to vendor
 
 	//------------------------------------------------------------------------------
@@ -794,8 +794,8 @@ function NT_LoadConfig()
 
 	
 	prewavespot = [15092, 5028];	// Pre-Wave standing (X,Y) coordinates. (For Baal Scripts.)
-	NTConfig_SetDiablo = 0;			// leechers (only) stop attacking Diablo after x% - valid values 0 to 100
-	NTConfig_SetBaal = 0;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
+	NTConfig_SetDiablo = 20;			// leechers (only) stop attacking Diablo after x% - valid values 0 to 100
+	NTConfig_SetBaal = 20;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
 
 	NTconfig_HighMaxAttack = false;						// Use HighMaxAttacks? (False = LowMaxAttacks.) High/Low are below.
 	NTConfig_HighMaxAttackAreas = [131];				// If above is set false (you're using LowMaxAttacks), add areas to bypass LowMaxAttacks and use HighMaxAttacks instead. (Recommended in Baal's Throne Room.)
