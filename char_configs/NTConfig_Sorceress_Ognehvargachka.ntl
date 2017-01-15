@@ -66,9 +66,14 @@ function NT_LoadConfig()
 		NTConfig_TakeTpDiablo = "TP up.";			// Message from leader signifying you to take portal. (Must be different than Baal & Trav tp messages.)
 		NTConfig_UseChatCommandPortal = true;			// Use portal after TakeTpDiablo message? (False will attempt taking first TP made by leader, ignores TakeTpDiablo.)
 
-	NTConfig_Script.push("NTBloodyFoothills.ntj");
-		NTConfig_ClearBloodyFoothills = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_BloodyFoothillsBoss = 0;				// 0 : Shenk, 1: Dac Farren, 2 : Both, -1 : Disable
+	NTConfig_Script.push("NTNihlathaksTemple.ntj");
+		NTConfig_UseTemplePortal = false; 				// Use red portal in act 5? (Set false for waypoint.)
+		NTConfig_KillPindleskin = false; 				// Set true to kill Pindleskin, false if not
+		NTConfig_KillNihlathak = true;					// Set true to kill Nihlathak, false if not
+		NTConfig_OpenEvilUrnOrChests = -1;				// 0 : Evil Urn, 1 : Super Chests, 2 : Both, -1 : Don't Open
+		NTConfig_ClearHalls = 0;						// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_CheckVipers = false; 					// End script if Tomb Vipers are found around Nihlathak?
+		NTConfig_DanceForPindle = false;					// Set to false to disable dancing sorc on Pindle
 
 	NTConfig_Script.push("NTUniversalBaalLeech.ntj");
 		NTConfig_LeechBaal = 1; 						// 1 = Leech Fighter (Tele), 2 = Leech Fighter (Walking), 3 = Passive Leecher (Corner dunce).
@@ -264,6 +269,9 @@ function NT_LoadConfig()
 	// Act 5 Scripts
 	//------------------------------------------------------------------------------------
 
+	//NTConfig_Script.push("NTBloodyFoothills.ntj");
+		NTConfig_ClearBloodyFoothills = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_BloodyFoothillsBoss = 0;				// 0 : Shenk, 1: Dac Farren, 2 : Both, -1 : Disable
 	//NTConfig_Script.push("NTArreatPlateau.ntj");
 		NTConfig_ClearArreatPlateau = 0;				// 0 : Thresh Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 		NTConfig_ArreatEvilUrn = false;					// Set true to open Evil Urn, false if not
@@ -271,14 +279,7 @@ function NT_LoadConfig()
 	//NTConfig_Script.push("NTCrystallinePassage.ntj");
 		NTConfig_ClearCrystalline = 0;					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearFrozenRiver = 0;					// 0 : Frozenstein Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
-	//NTConfig_Script.push("NTNihlathaksTemple.ntj");
-		NTConfig_UseTemplePortal = true; 				// Use red portal in act 5? (Set false for waypoint.)
-		NTConfig_KillPindleskin = true; 				// Set true to kill Pindleskin, false if not
-		NTConfig_KillNihlathak = false;					// Set true to kill Nihlathak, false if not
-		NTConfig_OpenEvilUrnOrChests = -1;				// 0 : Evil Urn, 1 : Super Chests, 2 : Both, -1 : Don't Open
-		NTConfig_ClearHalls = 0;						// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_CheckVipers = false; 					// End script if Tomb Vipers are found around Nihlathak?
-		NTConfig_DanceForPindle = false;					// Set to false to disable dancing sorc on Pindle
+
 	//NTConfig_Script.push("NTGlacialTrail.ntj");
 		NTConfig_ClearGlacialTrail = 0;					// 0 : Bonesaw Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 		NTConfig_ClearDrifterCavern = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
