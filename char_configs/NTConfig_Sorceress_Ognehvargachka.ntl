@@ -48,7 +48,7 @@ function NT_LoadConfig()
 	NTConfig_Leader = "Chicho_Gosho";						// Leaders name. (Don't set to yourself.)
 	NTConfig_PartyOnlyLeader = false;					// Party only with leader (NTConfig_Leader)? (If true, NTConfig_PublicMode MUST be set false in the general config section below).
 	NTConfig_PartyMaxTime = 20;							// Time in seconds the leecher has to party with leader before exiting game
-	NTConfig_LeechBo = true; 							// Set false to disable BO & BC cast by leecher.
+	NTConfig_LeechBo = false; 							// Set false to disable BO & BC cast by leecher.
 	NTConfig_LeechExitDelay = 1000;						// Delay before leecher exits game after leader in milliseconds.  Use this to stagger leechers exit times to avoid crashes.
 
 	//NTConfig_Script.push("NTLeechCows.ntj");			// Leech fighter cow script.  Must run leader with NTCow.ntj
