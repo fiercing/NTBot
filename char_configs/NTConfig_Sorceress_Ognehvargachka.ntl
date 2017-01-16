@@ -788,7 +788,7 @@ function NT_LoadConfig()
 	// 		* As of Jan 17th: -1 = Disabled, 0 = Normal Attack.
 	//------------------------------------------------------------------------------
 	NTConfig_AttackSkill[0]  = -1; 	// First skill. Maybe slow missiles
-	NTConfig_AttackSkill[1]  = 47; 	// Primary skill to super unique/champion.
+	NTConfig_AttackSkill[1]  = 56; 	// Primary skill to super unique/champion.
 	NTConfig_AttackSkill[2]  = 47; 	// Primary untimed skill to super unique/champion.
 	NTConfig_AttackSkill[3]  = 47; 	// Primary skill to others.
 	NTConfig_AttackSkill[4]  = 47; 	// Primary untimed skill to others.
