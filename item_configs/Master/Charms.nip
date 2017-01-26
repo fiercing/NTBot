@@ -38,13 +38,13 @@
 
 //GOLD FIND GC
 //[Name] == GrandCharm && [Quality] == Magic # [ItemGoldBonus] >= 40
-[Name] == GrandCharm && [Quality] == Magic # [ItemGoldBonus] >= 40 && (([ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 60) || [ColdResist] >= 26 || [FireResist] >= 26 || [LightResist] >= 26)
+[Name] == GrandCharm && [Quality] == Magic # [ItemGoldBonus] >= 40 && (([ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 60) || [ColdResist] >= 28 || [FireResist] >= 28 || [LightResist] >= 28)
 [Name] == GrandCharm && [Quality] == Magic # [ItemGoldBonus] >= 40 && (([MAXDamage] >= 9 && [ToHit] >= 49) || [Mana] >= 40)
 
 //RESIST GC
 [Name] == GrandCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 60
 [Name] == GrandCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 56 && ([FRW] == 7 || [FHR] == 12)
-[Name] == GrandCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 40 && [MaxHP] >= 25
+[Name] == GrandCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 56 && [MaxHP] >= 25
 
 //MAX DAMAGE GC
 [Name] == GrandCharm && [Quality] == Magic # [MAXDamage] >= 9 && [ToHit] >= 49
@@ -112,4 +112,4 @@
 //POISON SC
 //[Name] == SmallCharm && [Quality] == Magic # [PoisonMINDam] >= 175
 //[Name] == SmallCharm && [Quality] == Magic # [PoisonMAXDam] >= 175
-[Name] == SmallCharm && [Quality] == Magic # [PoisonMaxDam] >= 20
+[Name] == SmallCharm && [Quality] == Magic # [PoisonMaxDam] >= 100
