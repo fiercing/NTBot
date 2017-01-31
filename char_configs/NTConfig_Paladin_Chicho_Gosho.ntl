@@ -397,10 +397,10 @@ function NT_LoadConfig()
 	NTConfig_FreeSpace = 4;								// Number of free columns. If bot has less than this amount after id'ing, it will go to stash.
 
 	// These numbers correspond to your inventory. Set 0 to keep whatever is there, 1 to have the bot manage the slot.
-	NTConfig_Columns[0] = [0,0,0,0,0,1,1,1,1,1];
-	NTConfig_Columns[1] = [0,0,0,0,0,1,1,1,1,1];
-	NTConfig_Columns[2] = [0,0,0,0,0,1,1,1,1,1];
-	NTConfig_Columns[3] = [0,0,0,0,1,1,1,1,1,1];
+	NTConfig_Columns[0] = [0,0,0,0,0,0,1,1,1,1];
+	NTConfig_Columns[1] = [0,0,0,0,0,0,1,1,1,1];
+	NTConfig_Columns[2] = [0,0,0,0,0,0,1,1,1,1];
+	NTConfig_Columns[3] = [0,0,0,0,0,0,1,1,1,1];
 
 	NTConfig_MinGoldToStash = 100000;					// Maximum gold amount carried before going to stash
 
@@ -661,7 +661,7 @@ function NT_LoadConfig()
 	NTConfig_FinishRun = false; 						// true will finish current game. Good for if running the leecher entry or if running main as leader.
 	NTConfig_MuleStash = 8; 							// Set this to the free block limit in your Stash. If less than this mule.
 	NTConfig_MuleInv = 2; 								// Set this to the free column limit in your Inventory. If less than this mule. Must be set to higher than NTConfig_FreeSpace
- 	NTConfig_UseKeysForPlaceHolder = true;				// Set to true to keep a key in your inventory. (In the event that the bot has no space for ID scrolls, will sell the key instead of one of your items.)
+ 	NTConfig_UseKeysForPlaceHolder = false;				// Set to true to keep a key in your inventory. (In the event that the bot has no space for ID scrolls, will sell the key instead of one of your items.)
 	NTConfig_PropsForEtal = 0; 							// Advertising etal at the end of public games.  set to 0 to disable.  Set to 1 or greater for the number of phrases spoken before exiting public games.  See D2NT\scripts\NTBot\char_configs\EtalPR.ntl for instructions on adding or removing phrases
 	NTConfig_MercStats = false;							// Prints Merc stats to Common Log with Char stats if true
 	NTConfig_VoyageToMissingWps = true; 				// when missing a wp setting this to true will have the bot path to and grab the missing wp

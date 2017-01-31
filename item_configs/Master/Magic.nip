@@ -10,12 +10,13 @@
 //RARE/MAGIC JEWELS
 [Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MAXDamage] >= 20 || ([MAXDamage] >= 13 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8))
 [Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MINDamage] >= 18 || ([MINDamage] == 8 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8))
-[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [EnhancedDamage] >= 35 || ([EnhancedDamage] >= 30 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8))
-[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ToHit] >= 75 && ([MaxHP] >= 15 || [Strength] >= 8 || [Dexterity] >= 8 || [FHR] == 7 || [ItemReqPercent] == -15)
-[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MaxMana] >= 15 && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [ItemReqPercent] == -15)
-[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 48 && ([MaxHP] >= 15 || [Strength] >= 8 || [Dexterity] >= 8 || [FHR] == 7 || [ItemReqPercent] == -15)
-[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 60
-[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # ([ColdResist] >= 25 || [FireResist] >= 25 || [LightResist] >= 25 || [PoisonResist] == 30) && ([MaxHP] >= 15 || [Strength] >= 8 || [Dexterity] >= 8 || [FHR] == 7 || [ItemReqPercent] == -15)
+[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [EnhancedDamage] >= 38 || ([EnhancedDamage] >= 30 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8 || [MAXDamage] >= 15))
+//[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ToHit] >= 75 && ([MaxHP] >= 20 || [Strength] >= 8 || [Dexterity] >= 8 || [FHR] == 7 || [ItemReqPercent] == -15)
+//[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MaxMana] >= 15 && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [ItemReqPercent] == -15)
+[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 67 && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8)
+[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 80
+[Type] == Jewel && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 60
+[Type] == Jewel && [Quality] == Magic # ([ColdResist] == 30 || [FireResist] == 30 || [LightResist] == 30 || [PoisonResist] == 30) && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8)
 //[Name] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [PoisonMinDam] >= 20
 
 //MAGIC RINGS
@@ -25,22 +26,35 @@
 //MAGIC MF AMULET
 //[Type] == Amulet && [Quality] == Magic # [ItemMagicBonus] >= 50
 
+
+
 //RARE/MAGIC +2 CLASS AMULET
 //[Type] == Amulet && [Quality] == Magic # [ItemAddClassSkills] == 2 && ([FCR] >= 10 || [Dexterity] >= 25 || [HPRegen] == 15 || [ItemMagicBonus] >= 45 || [MaxHP] >= 95 || [LifeLeech] >= 5 || [ManaLeech] >= 5 || [Strength] >= 25)// || [Description] == "Teleportation (" || [Description] == "Attract (")
-[Type] == Amulet && [Quality] == Rare # [ItemAddClassSkills] == 2 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 80 && [Strength] >= 25 // || [Description] == "Teleportation (" || [Description] == "Attract (")
+
+[Type] == Amulet && [Quality] == Rare # [ItemAddClassSkills] == 2 && (([ColdResist] == 20 && [FireResist] == 20 && [LightResist] == 20) || ([ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 110)) // || [Description] == "Teleportation (" || [Description] == "Attract (")
+
+
 
 //RARE/MAGIC +3 TREE AMULET
 //[Type] == Amulet && [Quality] == Magic # [ItemAddSkillTab] >= 2 && ([FCR] >= 10 || [Dexterity] >= 25 || [HPRegen] == 15 || [ItemMagicBonus] >= 45 || [MaxHP] >= 95 || [LifeLeech] >= 5 || [ManaLeech] >= 5 || [Strength] >= 25)// || [Description] == "Teleportation (" || [Description] == "Attract (")
-[Type] == Amulet && [Quality] == Rare # [ItemAddSkillTab] == 3 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 80 && [Strength] >= 25 // || [Description] == "Teleportation (" || [Description] == "Attract (")
+[Type] == Amulet && [Quality] == Magic # [ItemAddSkillTab] == 3 && ([Strength] == 30 || [Dexterity] == 30 || [MaxHP] == 100 || [ItemMagicBonus] == 35) // || [Description] == "Teleportation (" || [Description] == "Attract (")
+
+
 
 //RARE +2 CLASS SKILL CIRCLET
-//[Type] == Circlet && [Quality] == Rare # [ItemAddClassSkills] == 2 && ([FCR] == 20 || [Sockets] == 2 || [Strength] >= 20 || [MaxHP] >= 30 || [Dexterity] >= 20 || [FRW] >= 20)// || [Description] == "Teleportation (" || [Description] == "Attract (")
+//[Type] == Circlet && [Quality] == Rare # [ItemAddClassSkills] == 2 && (([ColdResist] == 20 && [FireResist] == 20 && [LightResist] == 20) || ([ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 110)) // || [Description] == "Teleportation (" || [Description] == "Attract (")
+
+
 
 //RARE +3 TREE SKILLS CIRCLET
-//[Type] == Circlet && [Quality] == Rare # [ItemAddSkillTab] >= 2 && ([FCR] == 20 || [Sockets] == 2 || [Strength] >= 20 || [MaxHP] >= 30 || [Dexterity] >= 20 || [FRW] >= 20)// || [Description] == "Teleportation (" || [Description] == "Attract (")
+[Type] == Circlet && [Quality] == Magic # [ItemAddSkillTab] == 3 && ([FCR] == 20 || [Strength] == 30 || [Dexterity] == 30 || [MaxHP] == 100 || [ItemMagicBonus] == 35)// || [Description] == "Teleportation (" || [Description] == "Attract (")
+
+
 
 //MAGIC JEWELERS CIRCLETS
 //[Type] == Circlet && [Quality] == Magic && [Flag] != Ethereal # [Sockets] >= 3
+
+
 
 //MAGIC/RARE PELT
 //[Type] == Pelt && ([Quality] == Rare || [Quality] == Magic) && [Flag] != Ethereal # [DruidSkills] == 2 && [ItemSingleSkill] == 3
@@ -90,7 +104,7 @@
 //([Name] == MaidenJavelin || [Name] == CeremonialJavelin || [Name] == MatriarchalJavelin) && ([Quality] == Rare || [Quality] == Magic) # [IAS] >= 30 && [JavelinAndSpearSkillTab] >= 4
 
 //MAGIC/RARE WARCRY WEAPONS
-([Type] == Knife || [Type] == Sword) && ([Quality] == Magic || [Quality] == Rare) # [WarcriesSkillTab] == 3 && [Strength] >= 1
+[Type] == Weapon && ([Quality] == Magic || [Quality] == Rare) # [WarcriesSkillTab] == 3 && [Strength] >= 1
 
 //MAGIC/RARE SCEPTORS
 //[Type] == Scepter && ([Quality] == Magic || [Quality] == Rare) # (([PaladinSkills]+[SkillBlessedHammer] >= 4) || ([PaladinSkills]+[SkillConcentration] >= 4) || ([PaladinSkills]+[SkillFistOfTheHeavens] >= 4)) && [FCR] >= 20
@@ -100,11 +114,11 @@
 //[Name] == PhaseBlade && ([Quality] == Magic || [Quality] == Rare) # [Sockets] == 4 && [IAS] >= 40
 
 //MAGIC/RARE SORCERESS ORBS
-[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([SorceressSkills]+[SkillLightning] >= 5) || ([SorceressSkills]+[SkillChainLightning] >= 5)
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([SorceressSkills]+[SkillLightning] >= 5) || ([SorceressSkills]+[SkillChainLightning] >= 5) || ([SorceressSkills]+[SkillEnergyShield] >= 5)
 [Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([SorceressSkills]+[SkillFireball] >= 5) || ([SorceressSkills]+[SkillFirebolt] >= 5)
 [Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([SorceressSkills]+[SkillGlacialSpike] >= 5) || ([SorceressSkills]+[SkillFrozenOrb] >= 5)
 [Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # [SorceressSkills]+[SkillEnchant] >= 5
-[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([LightningSkillTab]+[SkillLightning] >= 5) || ([LightningSkillTab]+[SkillChainLightning] >= 5)
+[Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([LightningSkillTab]+[SkillLightning] >= 5) || ([LightningSkillTab]+[SkillChainLightning] >= 5) || ([LightningSkillTab]+[SkillEnergyShield] == 6)
 [Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([FireSkillTab]+[SkillFireball] >= 5) || ([FireSkillTab]+[SkillFirebolt] >= 5)
 [Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # ([ColdSkillTab]+[SkillGlacialSpike] >= 5) || ([ColdSkillTab]+[SkillFrozenOrb] >= 5)
 [Type] == Orb && ([Quality] == Magic || [Quality] == Rare) # [FireSkillTab]+[SkillEnchant] >= 5

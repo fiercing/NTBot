@@ -146,7 +146,7 @@
 
 //UNIQUE STAVES
 //[Name] == Quarterstaff && [Quality] == Unique # [EnhancedDamage] >= 280																							//RIBCRACKER
-[Name] == ElderStaff && [Quality] == Unique && [Flag] != Ethereal # [ItemAllSkills] == 4																					//ONDAL'S WISDOM
+//[Name] == ElderStaff && [Quality] == Unique && [Flag] != Ethereal # [ItemAllSkills] == 4																					//ONDAL'S WISDOM
 
 //UNIQUE THROWING WEAPONS
 //[Name] == FlyingAxe && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDamage] >= 205																				//GIMMERSHRED

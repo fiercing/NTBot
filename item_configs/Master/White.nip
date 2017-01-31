@@ -105,9 +105,9 @@
 //[Name] == WarSpike && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																								//Grief
 //[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4 || [Sockets] == 5 || [Sockets] == 6)									//Oath, Death, BotD
 //[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 5 || [Sockets] == 6)																				//Death, BotD
-[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6)																		//Last Wish
-//[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 1 && ([Sockets] == 4 || [Sockets] == 5)																			//HoJ, Grief
-[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)																														//Grief
+[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 10 && ([Sockets] == 0 || [Sockets] == 6)																		//Last Wish
+[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 5																							//HoJ, Grief
+//[Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)																														//Grief
 //[Name] == GloriousAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																								//Death
 //[Name] == Decapitator && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5)																			//Death
 [Name] == ThunderMaul && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6)																			//BotD
@@ -121,7 +121,7 @@
 [Name] == ColossusBlade && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6)																		//BotD
 ([Name] == ColossusSword || [Name] == Zweihander) && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5)												//Grief
 [Name] == ColossusSword && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5)																		//Death
-[Name] == Flail && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 4 || [Sockets] == 5														//HotO, CtA
+//[Name] == Flail && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 4 || [Sockets] == 5														//HotO, CtA
 //([Name] == ArchonStaff || [Name] == GhostSpear || [Name] == WarPike) && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6)							//BotD
 //[Name] == Scythe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 4																									//Infinity
 [Name] == ColossusVoulge && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4)																		//Infinity, Insight, Pride
@@ -129,7 +129,7 @@
 [Name] == ColossusVoulge && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 4																													//Infinity, Insight, Pride
 [Name] == CrypticAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5)								//Infinity, Insight, Pride, Obedience, Doom
 [Name] == CrypticAxe && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 5																			//Infinity, Insight, Pride, Obedience, Doom
-[Name] == WarPike && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 4 || [Sockets] == 5 || [Sockets] == 6)																			//Infinity, Insight, Pride, Obedience, Doom
+[Name] == WarPike && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 4 || [Sockets] == 6)																				//Infinity, Insight, Pride, Obedience, Doom
 //[Name] == GreatPoleaxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4 || [Sockets] == 5 || [Sockets] == 6)														//Infinity, Insight, Pride, BotD
 //[Name] == GiantThresher && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4)																		//Infinity, Insight, Pride
 [Name] == MatriarchalPike && [Quality] <= Superior && [Flag] == Ethereal # [JavelinAndSpearSkillTab] >= 3 && [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6)	//BotD
