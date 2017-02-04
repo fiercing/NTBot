@@ -12,17 +12,7 @@ function NT_LoadConfig()
 	// -----------------------------------------------------------------------------------------------------
 
 	//NTConfig_Script.push("ConfigCheck.ntj"); 			// This must be commented out & serves to prevent unconfigured characters from running.
-	NTConfig_Script.push("NTCatacombs.ntj");
-		NTConfig_ClearAllCatacombs = 0;					// 0 : Andy only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_PositionAndy = 2;						// 0 : right wall, 1 : left wall, 2 : very close, 3 : andy dodge, 4 : out of andy range
-		NTConfig_ClearAndarielThrone = false;			// Set to true to clear the throne room after Andy, false if not
 
-	NTConfig_Script.push("NTFrigidHighlands.ntj");
-		NTConfig_ClearFrigidHighlands = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_KillEldritch = true;					// Set true to kill Eldritch, false if not
-		NTConfig_KillSharptooth = false;			 	// Set true to kill Sharptooth Slayer, false if not
-		NTConfig_KillEyeBack = false;				 	// Set true to kill Eyeback The Unleashed, false if not
-		NTConfig_ClearAbaddon = -1;						// 0 : Chest Only, 1 : Clear Path 2 : Clear All
 	//------------------------------------------------------------------------------>>
 	// Etal Clone Hunter Options.
 	//------------------------------------------------------------------------------>>
@@ -45,7 +35,7 @@ function NT_LoadConfig()
 	// Leech, Leech Fighter & Team Botting Settings
 	//------------------------------------------------------------------------------
 
-	NTConfig_Leader = "Chicho_Gosho";						// Leaders name. (Don't set to yourself.)
+	NTConfig_Leader = "King_Leoric";						// Leaders name. (Don't set to yourself.)
 	NTConfig_PartyOnlyLeader = false;					// Party only with leader (NTConfig_Leader)? (If true, NTConfig_PublicMode MUST be set false in the general config section below).
 	NTConfig_PartyMaxTime = 20;							// Time in seconds the leecher has to party with leader before exiting game
 	NTConfig_LeechBo = false; 							// Set false to disable BO & BC cast by leecher.
@@ -58,6 +48,11 @@ function NT_LoadConfig()
 		LeechTrav_TakeTp =  "config me";				// Message from leader signifying you to take portal. (Must be different than Diablo & Baal tp messages.)
 	//NTConfig_Script.push("NTTravLeech.ntj");			// Trav Leecher (NTConfig_Leader must be configured above).
 		NTConfig_TakeTpTravincal = "config me";			// This must match leaders LeechTrav_TakeTp & must be different than Diablo & Baal tp messages.
+
+	NTConfig_Script.push("NTCatacombs.ntj");
+		NTConfig_ClearAllCatacombs = 0;					// 0 : Andy only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_PositionAndy = 2;						// 0 : right wall, 1 : left wall, 2 : very close, 3 : andy dodge, 4 : out of andy range
+		NTConfig_ClearAndarielThrone = false;			// Set to true to clear the throne room after Andy, false if not
 
 	NTConfig_Script.push("NTUniversalDiabloLeech.ntj");	// (NTConfig_Leader must be configured above).
 		NTConfig_LeechChaos = 2;						// 0 = Portal Leecher, 1 = Leech follow, 2 = Leech Fighter  (leech portals).
@@ -701,7 +696,7 @@ function NT_LoadConfig()
 	//-------------------------------------------------------------------------------
 	// Immunity Skipping
 	//-------------------------------------------------------------------------------
-	NTConfig_AreasToNotSkipImmunes = [];		// Add area ID's into the array seperated by "," for to disable immunity skipping within said area.
+	NTConfig_AreasToNotSkipImmunes = [108,131];		// Add area ID's into the array seperated by "," for to disable immunity skipping within said area.
 
 	NTConfig_SkipSingle[0] = false;						//Skips all physical immunes.
 	NTConfig_SkipSingle[1] = false;						//Skips all magic immunes.
@@ -809,7 +804,7 @@ function NT_LoadConfig()
 
 	NTConfig_DiaSpam = 56;			// Skill to spam before Diablo Spawns
 	NTConfig_SetDiablo = 40;			// leechers (only) stop attacking Diablo after x% - valid values 0 to 100
-	NTConfig_SetBaal = 40;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
+	NTConfig_SetBaal = 10;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
 
 	prewavespot = [15092, 5040];							// Pre-Wave standing (X,Y) coordinates. (For Baal Scripts.)
 	NTConfig_PreWaveSpam = 56;								// Attack skill to spam between waves.  Set "0" to disable.

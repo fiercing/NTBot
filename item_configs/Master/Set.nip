@@ -100,9 +100,9 @@
 //[Name] == LightPlatedBoots && [Quality] == Set // Vidala's Fetlock
 
 // # Aldur's Watchtower #
-[Name] == HuntersGuise && [Quality] == Set  && [Flag] != Ethereal # [ColdResist] == 50 // Aldur's Stony Gaze  
+//[Name] == HuntersGuise && [Quality] == Set  && [Flag] != Ethereal # [ColdResist] == 50 // Aldur's Stony Gaze  
 [Name] == BattleBoots && [Quality] == Set  && [Flag] != Ethereal # [FireResist] == 50 // Aldur's Advance
-[Name] == ShadowPlate && [Quality] == Set  && [Flag] != Ethereal # [LightResist] == 50 // Aldur's Deception
+//[Name] == ShadowPlate && [Quality] == Set  && [Flag] != Ethereal # [LightResist] == 50 // Aldur's Deception
 //[Name] == JaggedStar && [Quality] == Set  && [Flag] != Ethereal # [Sockets] == 3 // Aldur's Rhythm
 
 // # Bul Kathos' Children #

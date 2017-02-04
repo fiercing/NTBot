@@ -26,12 +26,6 @@ function NTMain()
 		NTC_SendMsgToScript("NTBotGame.ntj", "NTTM_TownMove()");
 		return;
 	}
-	if(!NTM_TakeWaypoint(111)){
-		NTC_SendMsgToScript("NTBotGame.ntj", "NTM_TakeWaypoint()");
-		return;
-	}
-	//NTP_CastBC(true);
-	NTP_DoPrecast(true);
 	if(!NTM_TakeWaypoint(109)){
 		NTC_SendMsgToScript("NTBotGame.ntj", "NTM_TakeWaypoint()");
 		return;
