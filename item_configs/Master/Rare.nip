@@ -30,7 +30,7 @@
 //[Type] == Ring && [Quality] == Rare # [ManaLeech]+[LifeLeech] >= 10 && [MaxHP] >= 35
 
 //RARE MF AMULET
-[Type] == Amulet && ([Quality] == Rare || [Quality] == Magic) == Rare # [ItemMagicBonus] >= 35
+[Type] == Amulet && ([Quality] == Rare || [Quality] == Magic) # [ItemMagicBonus] >= 35
 
 //RARE VISIONARY CIRCLET
 //[Type] == Circlet && [Quality] == Rare # [ItemToHitPercentPerLevel] > 1
