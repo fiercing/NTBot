@@ -14,7 +14,7 @@
 [Name] == ScrollofIdentify
 
 //CHEST KEY
-[Name] == Key # # [MaxQuantity] == 12
+//[Name] == Key # # [MaxQuantity] == 12
 
 //UBER QUEST KEYS
 //[Name] == KeyOfTerror
@@ -42,12 +42,12 @@
 //[Name] == TirRune # # [MaxQuantity] == 15
 //[Name] == NefRune # # [MaxQuantity] == 3
 //[Name] == EthRune # # [MaxQuantity] == 3
-[Name] == IthRune # # [MaxQuantity] == 1
+//[Name] == IthRune # # [MaxQuantity] == 1
 //[Name] == TalRune # # [MaxQuantity] == 3
 //[Name] == RalRune # # [MaxQuantity] == 3
 //[Name] == OrtRune # # [MaxQuantity] == 3
 //[Name] == ThulRune # # [MaxQuantity] == 3
-//[Name] == AmnRune # # [MaxQuantity] == 3
+[Name] == AmnRune # # [MaxQuantity] == 3
 //[Name] == SolRune # # [MaxQuantity] == 3
 //[Name] == ShaelRune # # [MaxQuantity] == 3
 //[Name] == DolRune # # [MaxQuantity] == 3

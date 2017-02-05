@@ -112,6 +112,9 @@ function NTMain(){
 		NTC_SendLogToOOG(NTC_LOG_COMMON, COLOR_1 + "Undead Soul Killers found.");
 		NTC_SendMsgToScript("NTBotGame.ntj", "SCRIPT_END");
 		return;
+	}else{
+			NTM_MakeTP();
+			Say(Baal_HotTp);
 	}
 	// End Doll Check
 	NTA_ClearPosition(20, true, 2);

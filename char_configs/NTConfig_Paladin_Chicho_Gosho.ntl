@@ -35,7 +35,7 @@ function NT_LoadConfig()
 	// Leech, Leech Fighter & Team Botting Settings
 	//------------------------------------------------------------------------------
 
-	NTConfig_Leader = "King_Leoric";						// Leaders name. (Don't set to yourself.)
+	NTConfig_Leader = "";						// Leaders name. (Don't set to yourself.)
 	NTConfig_PartyOnlyLeader = false;					// Party only with leader (NTConfig_Leader)? (If true, NTConfig_PublicMode MUST be set false in the general config section below).
 	NTConfig_PartyMaxTime = 20;							// Time in seconds the leecher has to party with leader before exiting game
 	NTConfig_LeechBo = true; 							// Set false to disable BO & BC cast by leecher.
@@ -49,26 +49,19 @@ function NT_LoadConfig()
 	//NTConfig_Script.push("NTTravLeech.ntj");			// Trav Leecher (NTConfig_Leader must be configured above).
 		NTConfig_TakeTpTravincal = "config me";			// This must match leaders LeechTrav_TakeTp & must be different than Diablo & Baal tp messages.
 
-	NTConfig_Script.push("NTTravincal.ntj");
+	//NTConfig_Script.push("NTTravincal.ntj");
 		NTConfig_ClearRuinedFane = 0;					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearDisusedReliquary = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearTravincal = 0;					// 0 : Council Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 
-	NTConfig_Script.push("NTUniversalDiabloLeech.ntj");	// (NTConfig_Leader must be configured above).
+	//NTConfig_Script.push("NTUniversalDiabloLeech.ntj");	// (NTConfig_Leader must be configured above).
 		NTConfig_LeechChaos = 2;						// 0 = Portal Leecher, 1 = Leech follow, 2 = Leech Fighter  (leech portals).
 		NTConfig_followDelay = 8000;					// Delay in milliseconds to enter follow portal
 		NTConfig_Chaosleechpos = [7763, 5267];			//  Hide location for Passive leecher alternate [7767, 5263];
 		NTConfig_TakeTpDiablo = "TP up.";			// Message from leader signifying you to take portal. (Must be different than Baal & Trav tp messages.)
 		NTConfig_UseChatCommandPortal = true;			// Use portal after TakeTpDiablo message? (False will attempt taking first TP made by leader, ignores TakeTpDiablo.)
 
-	NTConfig_Script.push("NTFrigidHighlands.ntj");
-		NTConfig_ClearFrigidHighlands = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
-		NTConfig_KillEldritch = true;					// Set true to kill Eldritch, false if not
-		NTConfig_KillSharptooth = false;			 	// Set true to kill Sharptooth Slayer, false if not
-		NTConfig_KillEyeBack = false;				 	// Set true to kill Eyeback The Unleashed, false if not
-		NTConfig_ClearAbaddon = -1;						// 0 : Chest Only, 1 : Clear Path 2 : Clear All
-
-	NTConfig_Script.push("NTUniversalBaalLeech.ntj");
+	//NTConfig_Script.push("NTUniversalBaalLeech.ntj");
 		NTConfig_LeechBaal = 1; 						// 1 = Leech Fighter (Tele), 2 = Leech Fighter (Walking), 3 = Passive Leecher (Corner dunce).
 		NTConfig_TakeTpBaal = "TP up.";				// Message from leader signifying you to take portal. (Must be different than Diablo & Trav tp messages.)
 		NTConfig_LeechPrecast = true; 					// Do you want your leecher to precast?
@@ -239,7 +232,7 @@ function NT_LoadConfig()
 		NTConfig_ClearCityOfTheDamned = 1;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 	//NTConfig_Script.push("NTRiverOfFlame.ntj");
 		NTConfig_ClearRiverOfFlame = 1; 				// 0 : Hephasto only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
-	//NTConfig_Script.push("NTChaosSanctuary.ntj");
+	NTConfig_Script.push("NTChaosSanctuary.ntj");
 		NTConfig_Dodge = false;	 						//
 		NTConfig_FastChaos = false;	 					// Set true to clear seal area/bosses, false for full
 		NTConfig_EvenFasterChaos = false;				// Set to true to clear ONLY the seal bosses at each seal.
@@ -252,7 +245,7 @@ function NT_LoadConfig()
 
 	NTConfig_CS_SafeTP 			= "TP up.";			// Message for the Safe TP
 	NTConfig_CS_HotTP 			= "TP up.";			// Message for the Hot TP
-	NTConfig_CS_NextGame		= "New Game Is ";			// Message after Diablo is dead
+	//NTConfig_CS_NextGame		= "New Game Is ";			// Message after Diablo is dead
 	NTConfig_CS_LeechSupTP		= "TP up.";			// Message for LeechSupport
 	NTConfig_CS_SealBasher		= "Don't hit the seals.";	// Message if people hit seals (Seal bashers, lol)
 
@@ -263,7 +256,12 @@ function NT_LoadConfig()
 	//NTConfig_Script.push("NTBloodyFoothills.ntj");
 		NTConfig_ClearBloodyFoothills = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_BloodyFoothillsBoss = -1;				// 0 : Shenk, 1: Dac Farren, 2 : Both, -1 : Disable
-
+	NTConfig_Script.push("NTFrigidHighlands.ntj");
+		NTConfig_ClearFrigidHighlands = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_KillEldritch = true;					// Set true to kill Eldritch, false if not
+		NTConfig_KillSharptooth = false;			 	// Set true to kill Sharptooth Slayer, false if not
+		NTConfig_KillEyeBack = false;				 	// Set true to kill Eyeback The Unleashed, false if not
+		NTConfig_ClearAbaddon = -1;						// 0 : Chest Only, 1 : Clear Path 2 : Clear All
 	//NTConfig_Script.push("NTArreatPlateau.ntj");
 		NTConfig_ClearArreatPlateau = 0;				// 0 : Thresh Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 		NTConfig_ArreatEvilUrn = false;					// Set true to open Evil Urn, false if not
@@ -287,28 +285,28 @@ function NT_LoadConfig()
 	//NTConfig_Script.push("NTAncientsWay.ntj");
 		NTConfig_ClearAncientWay = 0;					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearIcyCellar = 0;					// 0 : SnapChip Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
-	//NTConfig_Script.push("NTWorldstoneKeep.ntj");
+	NTConfig_Script.push("NTWorldstoneKeep.ntj");
 		NTConfig_ClearWorldStoneKeep = 0;				// 0 : Baal Run Only, 1 : Clear Path 2 : Clear All (From Waypoint)
-		NTConfig_MakeWSK3TP = true; 					// Make WS3 TP for help clearing the Throne
+		NTConfig_MakeWSK3TP = false; 					// Make WS3 TP for help clearing the Throne
 		NTConfig_CheckSoulKillers = true; 				// End script if Stygian Dolls are found in Throne
-		NTConfig_MakeHotTP = true; 						// Make a hot TP before clearing Throne
+		NTConfig_MakeHotTP = false; 						// Make a hot TP before clearing Throne
 		NTConfig_PreWaveTele = false; 					// Teleport before wave to keep merc close
 		NTConfig_HolyBoltBaal = false;		 			// Use Holy Bolt on wave 2 magic immunes
 		NTConfig_WalkAround = false;					// Move if HB isn't hitting monster
-		NTConfig_Wave2PSNCheck = true; 				// Heal after wave 2 if poisoned
+		NTConfig_Wave2PSNCheck = false; 				// Heal after wave 2 if poisoned
 		NTConfig_Wave3Move = 0; 						// 0 : Don't Move, 1 : Right Side, 2 : Left Side
-		NTConfig_TownBeforeBaal = true; 				// Check inventory & town if holding any items before going to Worldstone to kill Baal. (Requires NTConfig_FreeSpace correctly configured.)
+		NTConfig_TownBeforeBaal = false; 				// Check inventory & town if holding any items before going to Worldstone to kill Baal. (Requires NTConfig_FreeSpace correctly configured.)
 		NTConfig_KillBaal = true; 						// Set true to kill Baal, false if not
 
 	//------------------------\\
 	// "Public Baal Settings" \\
 	//------------------------\\
 
-	NTThrone_Announce = true; 											// Announce mobs in the Throne room pre-tp?
+	NTThrone_Announce = false; 											// Announce mobs in the Throne room pre-tp?
 	Baal_WSK3_TP_MSG = "TP up.";		// Message for portal in WS lvl 3. (Clears throne faster with help.)
 	Baal_HotTp = "TP up.";												// Hot TP message. (NTConfig_MakeHotTP must be set true.)
 	Baal_SafeTp = "TP safe.";											// What to say when bot opens the safe TP.
-	Baal_KillBaalMessage = "Let's kill Baal!";							// What to say after last wave, before entering chamber.
+	Baal_KillBaalMessage = "";							// What to say after last wave, before entering chamber.
 	Baal_NextGameMessage = "";				// What to say after killing Baal. (We appriciate those who leave the shameless plug.)
 	Baal_FreeSpaceMessage = "Towning to clear space";  					// Used with NTConfig_FreeSpaceBeforeBaal for message before going to town to clear inventory
 	Baal_BSayNextGame = "Next game will be ";							// Message before announcing next game.  "Next game will be chaos" for example. (Leave empty to disable.)
@@ -643,7 +641,7 @@ function NT_LoadConfig()
 	NTConfig_ExitonDclone = false;						// Exit game on Diablo Walks
 	NTConfig_FastPickit = false;						// This is a new option that causes far less crashes(maybe none).  Is independent of snag delay
 	NTConfig_UseMerc = true;							// Set true if you will use a mercenary, will revive merc at a reviver npc.
-	NTConfig_ResetEnigma = false;  						// Set true to reset enigma when tele bug exists. (Safe.)
+	NTConfig_ResetEnigma = true;  						// Set true to reset enigma when tele bug exists. (Safe.)
 	NTConfig_QuitOnPing = 900;							// Ping threshold. (0 to disable.)
 	NTConfig_PingInterval = 10;							// If ping is greater than threshold for x seconds, exit game. (0 = Disabled,  x = Time Interval In Seconds.)
 	NTConfig_ClearPosition = false;						// Set true if you want to clear area after killing boss.

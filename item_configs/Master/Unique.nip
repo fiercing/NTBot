@@ -69,7 +69,7 @@
 [Name] == DuskShroud && [Quality] == Unique # [PassiveColdMastery] == 15 && ([SkillBlizzard] >= 3 || [SkillFrozenOrb] >= 3 || [SkillIceBlast] >= 3)											//ORMUS' ROBES
 //[Name] == WireFleece && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 150 && [NormalDamageReduction] >= 20 && [MagicDamageReduction] >= 20									//THE GLADIATOR'S BANE
 [Name] == BalrogSkin && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 170 && [ItemAllSkills] >= 2																//ARKAINE'S VALOR
-[Name] == KrakenShell && [Quality] == Unique # [EnhancedDefense] >= 180 && [PlusDefense] >= 130 && [DamageResist] >= 25 && [Strength] >= 48												//LEVIATHAN
+[Name] == KrakenShell && [Quality] == Unique # [EnhancedDefense] >= 180 && [PlusDefense] >= 130 && [DamageResist] >= 23 && [Strength] >= 45												//LEVIATHAN
 //[Name] == ShadowPlate && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 190 && [ManaRecovery] >= 10 && [ColdResist] >= 55 && [NormalDamageReduction] >= 14						//STEEL CARAPACE
 [Name] == SacredArmor && [Quality] == Unique # [EnhancedDefense] >= 200 && [OffensiveAurasSkillTab] >= 2 && [ArmorClassVSMissile] >= 270 && [Strength] >= 15 && [Vitality] >= 15						//TEMPLAR'S MIGHT
 [Name] == SacredArmor && [Quality] == Unique # [EnhancedDefense] >= 140 && [Strength] >= 30 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 120									//TYREAL'S MIGHT
@@ -81,7 +81,7 @@
 //[Name] == Pavise && [Quality] == Unique && [Flag] != Ethereal # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 120 && [NormalDamageReduction] >=16 && [MagicDamageReduction] >= 18				//GERKE'S SANCTUARY
 //[Name] == GrimShield && [Quality] == Unique && [Flag] != Ethereal																									//LIDLESS WALL
 //[Name] == Luna && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 200																					//BLACKOAK SHIELD
-[Name] == Monarch && [Quality] == Unique																													//STORMSHIELD
+//[Name] == Monarch && [Quality] == Unique																													//STORMSHIELD
 //[Name] == TrollNest && [Quality] == Unique && [Flag] != Ethereal # [Sockets] >= 3 && [PlusDefense] >= 420 && [ArmorClassVSMissile] >= 350 && [FireResist] >= 30 && [PoisonResist] >= 40					//HEAD HUNTER'S GLORY
 //[Name] == Ward && [Quality] == Unique && [Flag] != Ethereal # [FireResist] >= 40 && [ToBlock] >= 30 && [ItemAbsorbCold] >= 11														//SPIRIT WARD
 
@@ -161,12 +161,12 @@
 //UNIQUE WANDS 
 [Name] == LichWand && [Quality] == Unique # [SkillBoneSpirit] >= 2 && [SkillBoneSpear] >= 3 && [SkillBoneWall] >= 3 && [SkillBoneArmor] >= 5 && [SkillTeeth] >= 5									//Perfect BONESHADE
 [Name] == UnearthedWand && [Quality] == Unique # [PoisonAndBoneSkillTab] >= 2 && [PassivePoisPierce] >= 50																		//Perfectish DEATH'S WEB
-[Name] == TombWand && [Quality] == Unique																													//Arm of King Leoric
+//[Name] == TombWand && [Quality] == Unique																													//Arm of King Leoric
 
 //UNIQUE AMAZON
 //[Name] == CeremonialBow && [Quality] == Unique # [EnhancedDamage] >= 190																							//LYCANDER'S AIM
 //[Name] == CeremonialJavelin && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDamage] >= 200 && [LifeLeech] >= 8															//TITAN'S REVENGE
-[Name] == CeremonialJavelin && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDamage] >= 195 && [LifeLeech] >= 7																//Ethereal TITAN'S REVENGE
+[Name] == CeremonialJavelin && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDamage] >= 190 && [LifeLeech] >= 7																//Ethereal TITAN'S REVENGE
 //[Name] == MatriarchalBow && [Quality] == Unique # [EnhancedDamage] >= 220																							//BLOODRAVEN'S CHARGE
 
 //UNIQUE ASSASSIN 
@@ -185,12 +185,12 @@
 [Name] == TotemicMask && [Quality] == Unique # [EnhancedDefense] >= 190																								//Jalal's Mane
 
 //UNIQUE NECROMANCER 
-[Name] == HierophantTrophy && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 190 																			//HOMUNCULUS
+//[Name] == HierophantTrophy && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 190 																			//HOMUNCULUS
 [Name] == SuccubusSkull && [Quality] == Unique && [Flag] != Ethereal # [ItemAddNecromancerSkills] == 3 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 100 							//BONEFLAME
 //[Name] == BloodlordSkull && [Quality] == Unique 																											//DARKFORCE SPAWN
 
 //UNIQUE PALADIN
-[Name] == GildedShield && [Quality] == Unique 																												//HERALD OF ZAKARUM
+//[Name] == GildedShield && [Quality] == Unique 																												//HERALD OF ZAKARUM
 [Name] == SacredRondache && [Quality] == Unique # [ItemAddPaladinSkills] == 2 && [EnhancedDamage] >= 70																		//ALMA NEGRA
 [Name] == ZakarumShield && [Quality] == Unique # [ItemAbsorbFirePercent] == 20 && [Strength] >= 25																			//DRAGONSCALE
 

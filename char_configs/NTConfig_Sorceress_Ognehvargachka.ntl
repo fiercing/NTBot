@@ -35,7 +35,7 @@ function NT_LoadConfig()
 	// Leech, Leech Fighter & Team Botting Settings
 	//------------------------------------------------------------------------------
 
-	NTConfig_Leader = "King_Leoric";						// Leaders name. (Don't set to yourself.)
+	NTConfig_Leader = "Chicho_Gosho";						// Leaders name. (Don't set to yourself.)
 	NTConfig_PartyOnlyLeader = false;					// Party only with leader (NTConfig_Leader)? (If true, NTConfig_PublicMode MUST be set false in the general config section below).
 	NTConfig_PartyMaxTime = 20;							// Time in seconds the leecher has to party with leader before exiting game
 	NTConfig_LeechBo = false; 							// Set false to disable BO & BC cast by leecher.
