@@ -39,17 +39,24 @@
 // [Name] == WireFleece && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 700 && [Sockets] == 0		//Prudence, Duress, Fortitude, Stone
 // [Name] == DiamondMail && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 700 && [Sockets] == 0	//Prudence, Duress, Fortitude, Stone
 // [Name] == LoricatedMail && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 710 && [Sockets] == 0	//Prudence, Duress, Fortitude, Stone
-[Name] == Greathauberk && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 710 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
-[Name] == Boneweave && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 710 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
-[Name] == Balrogskin && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 720 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
-[Name] == Archonplate && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 700 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
-[Name] == Krakenshell && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 730 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
-[Name] == Hellforgeplate && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 730 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
+// [Name] == Greathauberk && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 710 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
+
+// [Name] == Boneweave && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 710 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
+
+// [Name] == Balrogskin && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 720 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
+
+// [Name] == Archonplate && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 700 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
+
+// [Name] == Krakenshell && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 730 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
+
+// [Name] == Hellforgeplate && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 730 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
+
 // [Name] == LacqueredPlate && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 810 && [Sockets] == 0	//Prudence, Duress, Fortitude, Stone
 // [Name] == ShadowPlate && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 835 && [Sockets] == 0	//Prudence, Duress, Fortitude, Stone
-[Name] == Sacredarmor && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 850 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
+// [Name] == Sacredarmor && [Quality] < Superior && [Flag] == Ethereal # [Defense] >= 850 && [Sockets] == 0 // Prudence, Duress, Fortitude, Stone
+
 // WHITE SHIELDS
-[Type] == Auricshields && [Class] == Normal && [Quality] <= Superior # [Sockets] == 4 // Spirit
+// [Type] == Auricshields && [Class] == Normal && [Quality] <= Superior # [Sockets] == 4 // Spirit
 [Name] == Crownshield && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 45 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
 [Name] == Royalshield && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 45 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
 [Name] == Sacredtarge && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 40 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
@@ -119,7 +126,7 @@
 // [Name] == Scythe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 4																									//Infinity
 [Name] == Colossusvoulge && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4) // Infinity, Insight, Pride
 // [Name] == ColossusVoulge && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 4)																								//Infinity, Insight, Pride
-[Name] == Colossusvoulge && [Quality] <= Superior # [Sockets] == 4 // Infinity, Insight, Pride
+// [Name] == Colossusvoulge && [Quality] <= Superior # [Sockets] == 4 // Infinity, Insight, Pride
 [Name] == Crypticaxe && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5) // Infinity, Insight, Pride, Obedience, Doom
 [Name] == Crypticaxe && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 5 // Infinity, Insight, Pride, Obedience, Doom
 [Name] == Warpike && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 4 || [Sockets] == 6) // Infinity, Insight, Pride, Obedience, Doom
@@ -133,7 +140,7 @@
 // [Name] == GreatBow && [Quality] <= Superior # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4)																									//Brand, Faith, Harmony, Ice, Wrath
 // ([Name] == CrusaderBow || [Name] == DiamondBow || [Name] == HydraBow || [Name] == ShadowBow || [Name] == WardBow) && [Quality] <= Superior # [EnhancedDamage] >= 10 && [Sockets] == 4						//Brand, Faith, Harmony, Ice, Wrath
 // ([Name] == CrusaderBow || [Name] == HydraBow || [Name] == ShadowBow) && [Quality] <= Superior # [EnhancedDamage] >= 15 && [Sockets] == 6																	//BotD
-[Name] == Hydrabow && [Quality] <= Superior # [Sockets] == 4 || [Sockets] == 6 // New Item
+[Name] == Hydrabow && [Quality] <= Superior # [Sockets] == 4 || [Sockets] == 6 // HydraBow
 // WHITE ES STAVES
 // ([Name] == GnarledStaff || [Name] == BattleStaff || [Name] == CedarStaff || [Name] == ElderStaff || [Name] == Shillelagh || [Name] == GothicStaff) && [Quality] <= Superior # [SkillEnergyShield] == 3 && [Sockets] == 4								//Memory
 // ([Name] == GnarledStaff || [Name] == BattleStaff || [Name] == CedarStaff || [Name] == ElderStaff || [Name] == Shillelagh || [Name] == GothicStaff) && [Quality] <= Superior # [SkillEnergyShield] == 3 && [SkillChillingArmor] >= 1 && [Sockets] == 4	//Memory
