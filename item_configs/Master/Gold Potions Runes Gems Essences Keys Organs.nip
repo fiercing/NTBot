@@ -47,7 +47,7 @@
 //[Name] == RalRune # # [MaxQuantity] == 3
 //[Name] == OrtRune # # [MaxQuantity] == 3
 //[Name] == ThulRune # # [MaxQuantity] == 3
-[Name] == AmnRune # # [MaxQuantity] == 3
+//[Name] == AmnRune # # [MaxQuantity] == 3
 //[Name] == SolRune # # [MaxQuantity] == 3
 //[Name] == ShaelRune # # [MaxQuantity] == 3
 //[Name] == DolRune # # [MaxQuantity] == 3

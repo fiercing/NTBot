@@ -143,7 +143,7 @@
 //[Name] == WarBelt && [Quality] == Set  && [Flag] != Ethereal // Immortal King's Detail
 [Name] == AvengerGuard && [Quality] == Set && [Flag] != Ethereal # [ItemMagicBonus] == 40 // Immortal King's Will
 //[Name] == OgreMaul && [Quality] == Set # [ItemCrushingBlow] == 40 // Immortal King's Stone Crusher
-[Name] == SacredArmor && [Quality] == Set // Immortal King's Soul Cage
+//[Name] == SacredArmor && [Quality] == Set // Immortal King's Soul Cage
 //[Name] == WarGauntlets && [Quality] == Set // Immortal King's Forge
 //[Name] == WarBoots && [Quality] == Set // Immortal King's Pillar
 
@@ -185,7 +185,7 @@
 // # Tal Rasha's Wrappings #
 //[Name] == SwirlingCrystal && [Quality] == Set && [Flag] != Ethereal # [LightningSkillTab] == 2 || [ColdSkillTab] == 2 || [FireSkillTab] == 2 // Tal Rasha's Lidless Eye
 //[Name] == DeathMask && [Quality] == Set && [Flag] != Ethereal // Tal Rasha's Horadric Crest
-[Name] == LacqueredPlate && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 840 // Tal Rasha's Guardianship
+//[Name] == LacqueredPlate && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 840 // Tal Rasha's Guardianship
 //[Type] == Amulet && [Quality] == Set # [SorceressSkills] == 2 // Tal Rasha's Adjucation
 //[Name] == MeshBelt && [Quality] == Set && [Flag] != Ethereal # [ItemMagicBonus] == 15 // Tal Rasha's Fine-Spun Cloth
 
@@ -193,5 +193,5 @@
 [Name] == BoneVisage && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 250 // Trang-Oul's Guise
 //[Name] == ChaosArmor && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 840 // Trang-Oul's Scales
 [Name] == CantorTrophy && [Quality] == Set && [Flag] != Ethereal # [FireResist] == 45 // Trang-Oul's Wing
-[Name] == TrollBelt && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 150 // Trang-Oul's Girth
+//[Name] == TrollBelt && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 150 // Trang-Oul's Girth
 //[Name] == HeavyBracers && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 70 // Trang-Oul's Claws

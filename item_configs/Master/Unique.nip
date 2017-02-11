@@ -180,19 +180,19 @@
 [Name] == FuryVisor && [Quality] == Unique #  [WarcriesSkillTab] >= 3 && [SkillFeralRage] >= 6 && [SkillLycanthropy] >= 6 && [SkillWerewolf] >= 6											//Wolfhowl
 
 //UNIQUE DRUID
-[Name] == SkySpirit && [Quality] == Unique # [PassiveFirePierce] == 20 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 100 													//RAVENLORE
+[Name] == SkySpirit && [Quality] == Unique # [PassiveFirePierce] == 20 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 80 													//RAVENLORE
 //[Name] == EarthSpirit && [Quality] == Unique # [ItemAbsorbLight] >= 12 && [ItemAbsorbColdPercent] >= 20																		//SPIRIT KEEPER
 [Name] == TotemicMask && [Quality] == Unique # [EnhancedDefense] >= 190																								//Jalal's Mane
 
 //UNIQUE NECROMANCER 
 //[Name] == HierophantTrophy && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 190 																			//HOMUNCULUS
-[Name] == SuccubusSkull && [Quality] == Unique && [Flag] != Ethereal # [ItemAddNecromancerSkills] == 3 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 100 							//BONEFLAME
+[Name] == SuccubusSkull && [Quality] == Unique && [Flag] != Ethereal # [ItemAddNecromancerSkills] == 3 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 110 							//BONEFLAME
 //[Name] == BloodlordSkull && [Quality] == Unique 																											//DARKFORCE SPAWN
 
 //UNIQUE PALADIN
 //[Name] == GildedShield && [Quality] == Unique 																												//HERALD OF ZAKARUM
 [Name] == SacredRondache && [Quality] == Unique # [ItemAddPaladinSkills] == 2 && [EnhancedDamage] >= 70																		//ALMA NEGRA
-[Name] == ZakarumShield && [Quality] == Unique # [ItemAbsorbFirePercent] == 20 && [Strength] >= 25																			//DRAGONSCALE
+//[Name] == ZakarumShield && [Quality] == Unique # [ItemAbsorbFirePercent] == 20 && [Strength] >= 25																			//DRAGONSCALE
 
 //UNIQUE SORCERESS
 //[Name] == EldritchOrb && [Quality] == Unique # [ItemAddSorceressSkills] == 3 && ([PassiveLtngMastery] == 20 || [PassiveFireMastery] == 20) 												//ESCHUTA'S TEMPER
