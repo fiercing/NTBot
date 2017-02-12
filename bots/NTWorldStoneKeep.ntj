@@ -134,10 +134,7 @@ function NTMain(){
 	}
 	NT_ClearThroneInt();
 	if(NTConfig_PublicMode){
-		NTM_MoveTo(me.areaid, 15114, 5069, 1, true);
-		NTM_MakeTP();
 		Say(Baal_SafeTp);
-		NTC_Delay(500);
 		NTP_DoPrecast(true);
 	}
 	while(1){

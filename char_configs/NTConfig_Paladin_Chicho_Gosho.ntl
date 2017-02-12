@@ -245,7 +245,7 @@ function NT_LoadConfig()
 
 	NTConfig_CS_SafeTP 			= "TP up.";			// Message for the Safe TP
 	NTConfig_CS_HotTP 			= "TP up.";			// Message for the Hot TP
-	//NTConfig_CS_NextGame		= "New Game Is ";			// Message after Diablo is dead
+	NTConfig_CS_NextGame		= "New Game Is ";			// Message after Diablo is dead
 	NTConfig_CS_LeechSupTP		= "TP up.";			// Message for LeechSupport
 	NTConfig_CS_SealBasher		= "Don't hit the seals.";	// Message if people hit seals (Seal bashers, lol)
 

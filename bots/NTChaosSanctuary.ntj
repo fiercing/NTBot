@@ -98,8 +98,6 @@ function NTMain() {
 	}
 	NTSI_PickItems();
 	PubSay("Diablo Dead.");
-	Delay(500);
-	if (NTConfig_CS_NextGame != "") PubSay(NTConfig_CS_NextGame + NTC_GetNextGame());
 	 
 	NTC_SendMsgToScript("NTBotGame.ntj", "SCRIPT_END");
 }
