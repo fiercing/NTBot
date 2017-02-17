@@ -41,14 +41,14 @@ function NT_LoadConfig()
 	// Boss Configuration
 	//------------------------------------------------------------------------------
 
-	//NTConfig_Script.push("NTNecroStarterPindlegarden.ntj");  // Raises skellies to get the ball rolling with your Necro.
+	NTConfig_Script.push("NTNecroStarterPindlegarden.ntj");  // Raises skellies to get the ball rolling with your Necro.
 		NTConfig_SaferSummons = false;							// set to true summons from one place.  Doesn't summon as many, but is much safer. Use especially if you have low FCR
 
 	//------------------------------------------------------------------------------
 	// Leech, Leech Fighter & Team Botting Settings
 	//------------------------------------------------------------------------------
 
-	NTConfig_Leader = "Chicho_Gosho";						// Leaders name. (Don't set to yourself.)
+	NTConfig_Leader = "ZooParty";						// Leaders name. (Don't set to yourself.)
 	NTConfig_PartyOnlyLeader = false;					// Party only with leader (NTConfig_Leader)? (If true, NTConfig_PublicMode MUST be set false in the general config section below).
 	NTConfig_PartyMaxTime = 20;							// Time in seconds the leecher has to party with leader before exiting game
 	NTConfig_LeechBo = false; 							// Set false to disable BO & BC cast by leecher.
@@ -400,10 +400,10 @@ function NT_LoadConfig()
 	NTConfig_FreeSpace = 4;								// Number of free columns. If bot has less than this amount after id'ing, it will go to stash.
 
 	// These numbers correspond to your inventory. Set 0 to keep whatever is there, 1 to have the bot manage the slot.
-	NTConfig_Columns[0] = [1,1,1,1,1,0,0,0,0,0];
-	NTConfig_Columns[1] = [1,1,1,1,1,0,0,0,0,0];
-	NTConfig_Columns[2] = [1,1,1,1,1,0,0,0,0,0];
-	NTConfig_Columns[3] = [1,1,1,1,1,0,0,0,0,0];
+	NTConfig_Columns[0] = [1,1,1,1,0,0,0,0,0,0];
+	NTConfig_Columns[1] = [1,1,1,1,0,0,0,0,0,0];
+	NTConfig_Columns[2] = [1,1,1,1,0,0,0,0,0,0];
+	NTConfig_Columns[3] = [1,1,1,1,0,0,0,0,0,0];
 
 	NTConfig_MinGoldToStash = 100000;					// Maximum gold amount carried before going to stash
 
@@ -793,8 +793,8 @@ function NT_LoadConfig()
 	NTConfig_AttackSkill[6] = -1;	// Secondary untimed skill. Set to -1 if you won't
 
 	NTConfig_DiaSpam = 0;			// Skill to spam before Diablo Spawns
-	NTConfig_SetDiablo = 10;			// leechers (only) stop attacking Diablo after x% - valid values 0 to 100
-	NTConfig_SetBaal = 10;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
+	NTConfig_SetDiablo = 50;			// leechers (only) stop attacking Diablo after x% - valid values 0 to 100
+	NTConfig_SetBaal = 20;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
 
 	prewavespot = [15092, 5040];						// Pre-Wave standing (X,Y) coordinates. (For Baal Scripts.)
 	NTConfig_PreWaveSpam = 0;							// Attack skill to spam between waves.  Set "0" to disable.

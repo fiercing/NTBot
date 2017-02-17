@@ -35,7 +35,7 @@ function NT_LoadConfig()
 	// Leech, Leech Fighter & Team Botting Settings
 	//------------------------------------------------------------------------------
 
-	NTConfig_Leader = "Chicho_Gosho";						// Leaders name. (Don't set to yourself.)
+	NTConfig_Leader = "ZooParty";						// Leaders name. (Don't set to yourself.)
 	NTConfig_PartyOnlyLeader = false;					// Party only with leader (NTConfig_Leader)? (If true, NTConfig_PublicMode MUST be set false in the general config section below).
 	NTConfig_PartyMaxTime = 20;							// Time in seconds the leecher has to party with leader before exiting game
 	NTConfig_LeechBo = false; 							// Set false to disable BO & BC cast by leecher.
@@ -61,7 +61,13 @@ function NT_LoadConfig()
 		NTConfig_TakeTpDiablo = "TP up.";			// Message from leader signifying you to take portal. (Must be different than Baal & Trav tp messages.)
 		NTConfig_UseChatCommandPortal = true;			// Use portal after TakeTpDiablo message? (False will attempt taking first TP made by leader, ignores TakeTpDiablo.)
 
-	NTConfig_Script.push("NTNihlathaksTemple.ntj");
+	NTConfig_Script.push("NTFrigidHighlands.ntj");
+		NTConfig_ClearFrigidHighlands = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
+		NTConfig_KillEldritch = true;					// Set true to kill Eldritch, false if not
+		NTConfig_KillSharptooth = false;			 	// Set true to kill Sharptooth Slayer, false if not
+		NTConfig_KillEyeBack = false;				 	// Set true to kill Eyeback The Unleashed, false if not
+		NTConfig_ClearAbaddon = -1;						// 0 : Chest Only, 1 : Clear Path 2 : Clear All
+	//NTConfig_Script.push("NTNihlathaksTemple.ntj");
 		NTConfig_UseTemplePortal = false; 				// Use red portal in act 5? (Set false for waypoint.)
 		NTConfig_KillPindleskin = false; 				// Set true to kill Pindleskin, false if not
 		NTConfig_KillNihlathak = true;					// Set true to kill Nihlathak, false if not
@@ -396,10 +402,10 @@ function NT_LoadConfig()
 	NTConfig_FreeSpace = 4;								// Number of free columns. If bot has less than this amount after id'ing, it will go to stash.
 
 	// These numbers correspond to your inventory. Set 0 to keep whatever is there, 1 to have the bot manage the slot.
-	NTConfig_Columns[0] = [1,1,1,1,0,0,0,0,0,0];
-	NTConfig_Columns[1] = [1,1,1,1,0,0,0,0,0,0];
-	NTConfig_Columns[2] = [1,1,1,1,0,0,0,0,0,0];
-	NTConfig_Columns[3] = [1,1,1,1,0,0,0,0,0,0];
+	NTConfig_Columns[0] = [1,1,0,0,0,0,0,0,0,0];
+	NTConfig_Columns[1] = [1,1,0,0,0,0,0,0,0,0];
+	NTConfig_Columns[2] = [1,1,0,0,0,0,0,0,0,0];
+	NTConfig_Columns[3] = [1,1,0,0,0,0,0,0,0,0];
 
 	NTConfig_MinGoldToStash = 100000;					// Maximum gold amount carried before going to stash
 
@@ -803,8 +809,8 @@ function NT_LoadConfig()
 	NTConfig_DanceStartMp = -1;							// Auto dance if below this % mana? (Set -1 to disable, 101 to always.)
 
 	NTConfig_DiaSpam = 56;			// Skill to spam before Diablo Spawns
-	NTConfig_SetDiablo = 40;			// leechers (only) stop attacking Diablo after x% - valid values 0 to 100
-	NTConfig_SetBaal = 10;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
+	NTConfig_SetDiablo = 50;			// leechers (only) stop attacking Diablo after x% - valid values 0 to 100
+	NTConfig_SetBaal = 20;			// leechers (only) stop attacking Baal after x% - valid values 0 to 100
 
 	prewavespot = [15092, 5040];							// Pre-Wave standing (X,Y) coordinates. (For Baal Scripts.)
 	NTConfig_PreWaveSpam = 56;								// Attack skill to spam between waves.  Set "0" to disable.

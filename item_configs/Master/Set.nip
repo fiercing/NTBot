@@ -190,8 +190,8 @@
 //[Name] == MeshBelt && [Quality] == Set && [Flag] != Ethereal # [ItemMagicBonus] == 15 // Tal Rasha's Fine-Spun Cloth
 
 // # Trang-Oul's Avatar #
-[Name] == BoneVisage && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 250 // Trang-Oul's Guise
+//[Name] == BoneVisage && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 250 // Trang-Oul's Guise
 //[Name] == ChaosArmor && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 840 // Trang-Oul's Scales
-[Name] == CantorTrophy && [Quality] == Set && [Flag] != Ethereal # [FireResist] == 45 // Trang-Oul's Wing
+//[Name] == CantorTrophy && [Quality] == Set && [Flag] != Ethereal # [FireResist] == 45 // Trang-Oul's Wing
 //[Name] == TrollBelt && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 150 // Trang-Oul's Girth
 //[Name] == HeavyBracers && [Quality] == Set && [Flag] != Ethereal # [Defense] >= 70 // Trang-Oul's Claws

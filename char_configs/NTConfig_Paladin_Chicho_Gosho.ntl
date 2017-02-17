@@ -35,7 +35,7 @@ function NT_LoadConfig()
 	// Leech, Leech Fighter & Team Botting Settings
 	//------------------------------------------------------------------------------
 
-	NTConfig_Leader = "";						// Leaders name. (Don't set to yourself.)
+	NTConfig_Leader = "ZooParty";						// Leaders name. (Don't set to yourself.)
 	NTConfig_PartyOnlyLeader = false;					// Party only with leader (NTConfig_Leader)? (If true, NTConfig_PublicMode MUST be set false in the general config section below).
 	NTConfig_PartyMaxTime = 20;							// Time in seconds the leecher has to party with leader before exiting game
 	NTConfig_LeechBo = true; 							// Set false to disable BO & BC cast by leecher.
@@ -54,14 +54,14 @@ function NT_LoadConfig()
 		NTConfig_ClearDisusedReliquary = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearTravincal = 0;					// 0 : Council Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 
-	//NTConfig_Script.push("NTUniversalDiabloLeech.ntj");	// (NTConfig_Leader must be configured above).
+	NTConfig_Script.push("NTUniversalDiabloLeech.ntj");	// (NTConfig_Leader must be configured above).
 		NTConfig_LeechChaos = 2;						// 0 = Portal Leecher, 1 = Leech follow, 2 = Leech Fighter  (leech portals).
-		NTConfig_followDelay = 8000;					// Delay in milliseconds to enter follow portal
+		NTConfig_followDelay = 1000;					// Delay in milliseconds to enter follow portal
 		NTConfig_Chaosleechpos = [7763, 5267];			//  Hide location for Passive leecher alternate [7767, 5263];
 		NTConfig_TakeTpDiablo = "TP up.";			// Message from leader signifying you to take portal. (Must be different than Baal & Trav tp messages.)
 		NTConfig_UseChatCommandPortal = true;			// Use portal after TakeTpDiablo message? (False will attempt taking first TP made by leader, ignores TakeTpDiablo.)
 
-	//NTConfig_Script.push("NTUniversalBaalLeech.ntj");
+	NTConfig_Script.push("NTUniversalBaalLeech.ntj");
 		NTConfig_LeechBaal = 1; 						// 1 = Leech Fighter (Tele), 2 = Leech Fighter (Walking), 3 = Passive Leecher (Corner dunce).
 		NTConfig_TakeTpBaal = "TP up.";				// Message from leader signifying you to take portal. (Must be different than Diablo & Trav tp messages.)
 		NTConfig_LeechPrecast = true; 					// Do you want your leecher to precast?
@@ -232,7 +232,7 @@ function NT_LoadConfig()
 		NTConfig_ClearCityOfTheDamned = 1;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 	//NTConfig_Script.push("NTRiverOfFlame.ntj");
 		NTConfig_ClearRiverOfFlame = 1; 				// 0 : Hephasto only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
-	NTConfig_Script.push("NTChaosSanctuary.ntj");
+	//NTConfig_Script.push("NTChaosSanctuary.ntj");
 		NTConfig_Dodge = false;	 						//
 		NTConfig_FastChaos = false;	 					// Set true to clear seal area/bosses, false for full
 		NTConfig_EvenFasterChaos = false;				// Set to true to clear ONLY the seal bosses at each seal.
@@ -256,7 +256,7 @@ function NT_LoadConfig()
 	//NTConfig_Script.push("NTBloodyFoothills.ntj");
 		NTConfig_ClearBloodyFoothills = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_BloodyFoothillsBoss = -1;				// 0 : Shenk, 1: Dac Farren, 2 : Both, -1 : Disable
-	NTConfig_Script.push("NTFrigidHighlands.ntj");
+	//NTConfig_Script.push("NTFrigidHighlands.ntj");
 		NTConfig_ClearFrigidHighlands = 0;				// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_KillEldritch = true;					// Set true to kill Eldritch, false if not
 		NTConfig_KillSharptooth = false;			 	// Set true to kill Sharptooth Slayer, false if not
@@ -285,7 +285,7 @@ function NT_LoadConfig()
 	//NTConfig_Script.push("NTAncientsWay.ntj");
 		NTConfig_ClearAncientWay = 0;					// 0 : Don't Clear, 1 : Clear All, 2 : Clear While Skipping Regular Monsters
 		NTConfig_ClearIcyCellar = 0;					// 0 : SnapChip Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
-	NTConfig_Script.push("NTWorldstoneKeep.ntj");
+	//NTConfig_Script.push("NTWorldstoneKeep.ntj");
 		NTConfig_ClearWorldStoneKeep = 0;				// 0 : Baal Run Only, 1 : Clear Path 2 : Clear All (From Waypoint)
 		NTConfig_MakeWSK3TP = false; 					// Make WS3 TP for help clearing the Throne
 		NTConfig_CheckSoulKillers = true; 				// End script if Stygian Dolls are found in Throne
@@ -365,7 +365,7 @@ function NT_LoadConfig()
 	// Speed Settings
 	//------------------------------------------------------------------------------
 	me.maxgametime = 1200; 								// Maximum game length in seconds (0 is infinite).
-	NTConfig_MinIngameTime = 0;							// Amount of minutes to remain ingame. Ensures game length. Setting is in minutes
+	NTConfig_MinIngameTime = 7;							// Amount of minutes to remain ingame. Ensures game length. Setting is in minutes
 	NTConfig_StartDelay = 0;							// Delay time in milliseconds to wait at start.
 	NTConfig_AreaDelay = 500;							// Delay time in milliseconds to wait on each area change.
 	NTConfig_SnagDelay = 500;							// Delay time in milliseconds (added to ping delay) to wait before each pickit call.
@@ -399,10 +399,10 @@ function NT_LoadConfig()
 	NTConfig_FreeSpace = 4;								// Number of free columns. If bot has less than this amount after id'ing, it will go to stash.
 
 	// These numbers correspond to your inventory. Set 0 to keep whatever is there, 1 to have the bot manage the slot.
-	NTConfig_Columns[0] = [0,0,0,0,0,0,0,1,1,1];
-	NTConfig_Columns[1] = [0,0,0,0,0,0,0,1,1,1];
-	NTConfig_Columns[2] = [0,0,0,0,0,0,0,1,1,1];
-	NTConfig_Columns[3] = [0,0,0,0,0,0,0,1,1,1];
+	NTConfig_Columns[0] = [0,0,0,0,0,0,0,0,1,1];
+	NTConfig_Columns[1] = [0,0,0,0,0,0,0,0,1,1];
+	NTConfig_Columns[2] = [0,0,0,0,0,0,0,0,1,1];
+	NTConfig_Columns[3] = [0,0,0,0,0,0,0,0,1,1];
 
 	NTConfig_MinGoldToStash = 100000;					// Maximum gold amount carried before going to stash
 
