@@ -780,9 +780,9 @@ function NT_LoadConfig()
 	//------------------------------------------------------------------------------
 	NTConfig_AttackSkill[0] = 91;	// First skill. Set to -1 if you won't
 	NTConfig_AttackSkill[1] = 74;	// Primary skill to boss.
-	NTConfig_AttackSkill[2] = -1;	// Primary untimed skill to boss. Set to -1 if you won't
+	NTConfig_AttackSkill[2] = 74;	// Primary untimed skill to boss. Set to -1 if you won't
 	NTConfig_AttackSkill[3] = 74;	// Primary skill to others.
-	NTConfig_AttackSkill[4] = -1;	// Primary untimed skill to others. Set to -1 if you won't
+	NTConfig_AttackSkill[4] = 74;	// Primary untimed skill to others. Set to -1 if you won't
 	NTConfig_AttackSkill[5] = -1;	// Secondary skill in case monster is immune to primary skill. Set to -1 if you won't
 	NTConfig_AttackSkill[6] = -1;	// Secondary untimed skill. Set to -1 if you won't
 
