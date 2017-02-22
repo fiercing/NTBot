@@ -1,11 +1,8 @@
 var NTConfig_SkeletonArmy;
 var NTConfig_MageArmy;
-//var NTConfig_ReviveArmy;
 var NTConfig_ActiveSummon;
-var NTConfig_Golem;
 var NTConfig_Curse = [];
-var NTConfig_TeleStomp;
-var NTConfig_PoisonNovaDelay;
+
 
 function NT_LoadConfig()
 {
@@ -784,7 +781,7 @@ function NT_LoadConfig()
 	// 		* Change the -1's to the corresponding #'s found in /D2NT/sdk/skills.txt
 	// 		* As of Jan 17th: -1 = Disabled, 0 = Normal Attack.
 	//------------------------------------------------------------------------------
-	NTConfig_AttackSkill[0] = -1;	// First skill. Set to -1 if you won't
+	NTConfig_AttackSkill[0] = 91;	// First skill. Set to -1 if you won't
 	NTConfig_AttackSkill[1] = 74;	// Primary skill to boss.
 	NTConfig_AttackSkill[2] = 74;	// Primary untimed skill to boss. Set to -1 if you won't
 	NTConfig_AttackSkill[3] = 74;	// Primary skill to others.
@@ -799,18 +796,6 @@ function NT_LoadConfig()
 	prewavespot = [15092, 5040];						// Pre-Wave standing (X,Y) coordinates. (For Baal Scripts.)
 	NTConfig_PreWaveSpam = 0;							// Attack skill to spam between waves.  Set "0" to disable.
 	NecroPreAtt = [15099, 5028];						// (X,Y) coordinates to attack with NTConfig_PreWaveSpam.
-
-	//NTconfig_HighMaxAttack = false;						// Use HighMaxAttacks? (False = LowMaxAttacks.) High/Low are below.
-	//NTConfig_HighMaxAttackAreas = [131];				// If above is set false (you're using LowMaxAttacks), add areas to bypass LowMaxAttacks and use HighMaxAttacks instead. (Recommended in Baal's Throne Room.)
-
-	//NTConfig_HighMaxAttacks = 300;						// Maximum number of attacks (HIGH) before skipping.
-	//NTConfig_LowMaxAttacks = 20;						// Maximum number of attacks (LOW) before skipping.
-
-	MonstersToAttackFirst = 							// Monster ID's to attack first. (Monsters which resurrect / spawn others are good choices.)
-	[58,59,60,61,62,101,102,103,104,190,191,
-	192,193,194,206,207,208,209,228,239,240,
-	241,278,279,280,281,282,283,303,312,480,
-	481,482,483,484,485,486,529];
 
 	NTConfig_AttackingThis = false; // Used to say target monsters ID/Name - Primarily for Dev purposes
 
@@ -843,7 +828,7 @@ function NT_LoadConfig()
 	NTConfig_MageArmy = 16; 				// Skeleton Mage army size. (Set 0 to disable.)
 	//NTConfig_ReviveArmy = 0; 				// Revive army size. (Set 0 to disable.)
 
-	NTConfig_ExplodeCorpses = 74; 			// 0 = Don't Explode / 74 = Corpse Explosion / 83 = Poison Explosion
+	//NTConfig_ExplodeCorpses = 74; 			// 0 = Don't Explode / 74 = Corpse Explosion / 83 = Poison Explosion
 	//NTConfig_PoisonNovaDelay = 1500;		// Time in ms to wait before casting another Poison Nova.
 
 
