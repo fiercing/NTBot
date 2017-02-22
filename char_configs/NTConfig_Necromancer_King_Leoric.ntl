@@ -70,7 +70,7 @@ function NT_LoadConfig()
 		NTConfig_UseChatCommandPortal = true;			// Use portal after TakeTpDiablo message? (False will attempt taking first TP made by leader, ignores TakeTpDiablo.)
 
 	NTConfig_Script.push("NTUniversalBaalLeech.ntj");
-		NTConfig_LeechBaal = 2; 						// 1 = Leech Fighter (Tele), 2 = Leech Fighter (Walking), 3 = Passive Leecher (Corner dunce).
+		NTConfig_LeechBaal = 1; 						// 1 = Leech Fighter (Tele), 2 = Leech Fighter (Walking), 3 = Passive Leecher (Corner dunce).
 		NTConfig_TakeTpBaal = "TP up.";				// Message from leader signifying you to take portal. (Must be different than Diablo & Trav tp messages.)
 		NTConfig_LeechPrecast = false; 					// Do you want your leecher to precast?
 		NTConfig_TeleEachWaveHelper = false;            // Teleport bot before each wave to keep merc close (not position based yet)?
@@ -642,7 +642,7 @@ function NT_LoadConfig()
 	NTConfig_ExitonDclone = false;						// Exit game on Diablo Walks
 	NTConfig_FastPickit = false;						// This is a new option that causes far less crashes(maybe none).  Is independent of snag delay
 	NTConfig_UseMerc = true;							// Set true if you will use a mercenary, will revive merc at a reviver npc.
-	NTConfig_ResetEnigma = false;  						// Set true to reset enigma when tele bug exists. (Safe.)
+	NTConfig_ResetEnigma = true;  						// Set true to reset enigma when tele bug exists. (Safe.)
 	NTConfig_QuitOnPing = 900;							// Ping threshold. (0 to disable.)
 	NTConfig_PingInterval = 10;							// If ping is greater than threshold for x seconds, exit game. (0 = Disabled,  x = Time Interval In Seconds.)
 	NTConfig_ClearPosition = false;						// Set true if you want to clear area after killing boss.
