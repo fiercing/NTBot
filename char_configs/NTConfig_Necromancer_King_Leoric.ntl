@@ -1,8 +1,5 @@
 var NTConfig_SkeletonArmy;
 var NTConfig_MageArmy;
-var NTConfig_ActiveSummon;
-var NTConfig_Curse = [];
-
 
 function NT_LoadConfig()
 {
@@ -783,9 +780,9 @@ function NT_LoadConfig()
 	//------------------------------------------------------------------------------
 	NTConfig_AttackSkill[0] = 91;	// First skill. Set to -1 if you won't
 	NTConfig_AttackSkill[1] = 74;	// Primary skill to boss.
-	NTConfig_AttackSkill[2] = 74;	// Primary untimed skill to boss. Set to -1 if you won't
+	NTConfig_AttackSkill[2] = -1;	// Primary untimed skill to boss. Set to -1 if you won't
 	NTConfig_AttackSkill[3] = 74;	// Primary skill to others.
-	NTConfig_AttackSkill[4] = 74;	// Primary untimed skill to others. Set to -1 if you won't
+	NTConfig_AttackSkill[4] = -1;	// Primary untimed skill to others. Set to -1 if you won't
 	NTConfig_AttackSkill[5] = -1;	// Secondary skill in case monster is immune to primary skill. Set to -1 if you won't
 	NTConfig_AttackSkill[6] = -1;	// Secondary untimed skill. Set to -1 if you won't
 
@@ -818,18 +815,5 @@ function NT_LoadConfig()
 	// Class Specific Settings
 	//------------------------------------------------------------------------------
 
-	NTConfig_Curse[0] = 91; 				// Curse to boss. Set to 0 if you won't
-	NTConfig_Curse[1] = 91; 				// Curse to others. Set to 0 if you won't
-
-	NTConfig_TeleStomp = false;				// Teleport onto a boss or immune monster.
-	NTConfig_ActiveSummon = true;				// Summon between attacks.
-	NTConfig_Golem = "None";				// Desired golem. 0 or "None" or "Iron" for no golem summoning, 1 or "Clay" for Clay Golem, 2 or "Blood" for Blood Golem, 3 or "Fire" for Fire Golem.
 	NTConfig_SkeletonArmy = 16; 				// Skeleton army size. (Set 0 to disable.)
 	NTConfig_MageArmy = 16; 				// Skeleton Mage army size. (Set 0 to disable.)
-	//NTConfig_ReviveArmy = 0; 				// Revive army size. (Set 0 to disable.)
-
-	//NTConfig_ExplodeCorpses = 74; 			// 0 = Don't Explode / 74 = Corpse Explosion / 83 = Poison Explosion
-	//NTConfig_PoisonNovaDelay = 1500;		// Time in ms to wait before casting another Poison Nova.
-
-
-}
