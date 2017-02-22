@@ -19,12 +19,12 @@
 //UNIQUE BELTS\\
 //[Name] == Sash && [Quality] == Unique && [Flag] != Ethereal																										//Lenymo
 //[Name] == HeavyBelt && [Quality] == Unique && [Flag] != Ethereal									 																//GOLD WRAP
-[Name] == DemonhideSash && [Quality] == Unique && [Flag] != Ethereal # [LifeLeech] == 8 && [DamageResist] == 15																	//STRING OF EARS
+//[Name] == DemonhideSash && [Quality] == Unique && [Flag] != Ethereal # [LifeLeech] == 8 && [DamageResist] == 15																	//STRING OF EARS
 //[Name] == SharkskinBelt && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 150																			//RAZORTAIL
 [Name] == BattleBelt && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] == 170																				//SNOWCLASH
 [Name] == WarBelt && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] == 200																					//THUNDERGOD'S VIGOR
 //[Name] == SpiderwebSash && [Quality] == Unique && [Flag] != Ethereal																								//ARACHNID MESH
-[Name] == Vampirefang Belt && [Quality] == Unique && [Flag] != Ethereal # [LifeLeech] == 7																				//NOSFERATU'S COIL
+//[Name] == Vampirefang Belt && [Quality] == Unique && [Flag] != Ethereal # [LifeLeech] == 7																				//NOSFERATU'S COIL
 [Name] == MithrilCoil && [Quality] == Unique && [Flag] != Ethereal # [Vitality] == 40 && [DamageResist] == 15																	//VERDUNGO'S HEARTY CORD
 
 //UNIQUE BOOTS
@@ -127,10 +127,10 @@
 //[Name] == ThunderMaul && [Quality] == Unique # [EnhancedDamage] >= 240 && [Strength] >= 25																				//THE CRANIUM BASHER
 
 //UNIQUE POLEARMS
-[Name] == OgreAxe && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDamage] >= 320																					//Ethereal BONEHEW
+[Name] == OgreAxe && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDamage] >= 300																					//Ethereal BONEHEW
 //[Name] == Thresher && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDamage] >= 240 && [LifeLeech] >= 11																	//Ethereal THE REAPER'S TOLL
 //[Name] == CrypticAxe && [Quality] == Unique && [Flag] != Ethereal # [Sockets] == 3 && [EnhancedDamage] >= 280 && [FireResist] >= 30 && [ItemHealAfterKill] >= 10 && [ItemMagicBonus] >= 50				//TOMB REAVER
-[Name] == CrypticAxe && [Quality] == Unique && [Flag] == Ethereal # [Sockets] == 3 && [EnhancedDamage] >= 275 && [FireResist] >= 30														//Ethereal TOMB REAVER
+[Name] == CrypticAxe && [Quality] == Unique && [Flag] == Ethereal # [Sockets] == 3 && [EnhancedDamage] >= 270 && [FireResist] >= 40														//Ethereal TOMB REAVER
 //[Name] == GiantThresher && [Quality] == Unique # [EnhancedDamage] >= 250																							//STORMSPIRE
 
 //UNIQUE SCEPTERS

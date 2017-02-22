@@ -59,17 +59,17 @@
 // [Type] == Auricshields && [Class] == Normal && [Quality] <= Superior # [Sockets] == 4 // Spirit
 [Name] == Crownshield && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 45 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
 [Name] == Royalshield && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 45 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
-[Name] == Sacredtarge && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 40 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
-[Name] == Sacredtarge && [Quality] < Superior && [Flag] == Ethereal # [Fireresist] >= 40 && [Sockets] == 0 // Exile
-[Name] == Sacredtarge && [Quality] < Superior && [Flag] == Ethereal # [Enhanceddamage] >= 60 && [Sockets] == 0 // Exile
+[Name] == Sacredtarge && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 45 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
+[Name] == Sacredtarge && [Quality] < Superior && [Flag] == Ethereal # [Fireresist] >= 45 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Exile
+[Name] == Sacredtarge && [Quality] < Superior && [Flag] == Ethereal # [Enhanceddamage] >= 60 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Exile
 [Name] == Sacredrondache && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 45 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
-[Name] == Sacredrondache && [Quality] < Superior && [Flag] == Ethereal # [Fireresist] >= 40 && [Sockets] == 0 // Exile
+[Name] == Sacredrondache && [Quality] < Superior && [Flag] == Ethereal # [Fireresist] >= 45 && [Sockets] == 0 // Exile
 [Name] == Sacredrondache && [Quality] < Superior && [Flag] == Ethereal # [Enhanceddamage] >= 60 && [Sockets] == 0 // Exile
 [Name] == Kurastshield && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 45 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary. Spirit, Phoenix
-[Name] == Kurastshield && [Quality] < Superior && [Flag] == Ethereal # [Fireresist] >= 40 && [Sockets] == 0 // Exile
+[Name] == Kurastshield && [Quality] < Superior && [Flag] == Ethereal # [Fireresist] >= 45 && [Sockets] == 0 // Exile
 [Name] == Kurastshield && [Quality] < Superior && [Flag] == Ethereal # [Enhanceddamage] >= 60 && [Sockets] == 0 // Exile
 [Name] == Zakarumshield && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 45 && [Enhanceddefense] >= 0 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
-[Name] == Zakarumshield && [Quality] < Superior && [Flag] == Ethereal # [Fireresist] >= 40 && [Sockets] == 0 // Exile
+[Name] == Zakarumshield && [Quality] < Superior && [Flag] == Ethereal # [Fireresist] >= 45 && [Sockets] == 0 // Exile
 [Name] == Zakarumshield && [Quality] < Superior && [Flag] == Ethereal # [Enhanceddamage] >= 60 && [Sockets] == 0 // Exile
 [Name] == Vortexshield && [Quality] <= Superior && [Flag] != Ethereal # [Fireresist] >= 45 && ([Sockets] == 0 || [Sockets] == 3 || [Sockets] == 4) // Sanctuary, Spirit, Phoenix
 [Name] == Vortexshield && [Quality] <= Superior && [Flag] == Ethereal # [Fireresist] >= 45 // Exile
@@ -105,8 +105,8 @@
 // [Name] == WarSpike && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																								//Grief
 // [Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4 || [Sockets] == 5 || [Sockets] == 6)									//Oath, Death, BotD
 // [Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 5 || [Sockets] == 6)																				//Death, BotD
-[Name] == Berserkeraxe && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 10 && ([Sockets] == 0 || [Sockets] == 6) // Last Wish
-[Name] == Berserkeraxe && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 5 // HoJ, Grief
+[Name] == Berserkeraxe && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 0 || [Sockets] == 6 // Last Wish
+// [Name] == Berserkeraxe && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 6 // HoJ, Grief
 // [Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)																														//Grief
 // [Name] == GloriousAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																								//Death
 // [Name] == Decapitator && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5)																			//Death
@@ -124,7 +124,7 @@
 // [Name] == Flail && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 4 || [Sockets] == 5														//HotO, CtA
 // ([Name] == ArchonStaff || [Name] == GhostSpear || [Name] == WarPike) && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6)							//BotD
 // [Name] == Scythe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 4																									//Infinity
-[Name] == Colossusvoulge && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4) // Infinity, Insight, Pride
+[Name] == Colossusvoulge && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 0 && ([Sockets] == 0 || [Sockets] == 4) // Infinity, Insight, Pride
 // [Name] == ColossusVoulge && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 4)																								//Infinity, Insight, Pride
 // [Name] == Colossusvoulge && [Quality] <= Superior # [Sockets] == 4 // Infinity, Insight, Pride
 [Name] == Crypticaxe && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5) // Infinity, Insight, Pride, Obedience, Doom

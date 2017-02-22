@@ -156,7 +156,7 @@
 
 // # Natalya's Odium #
 [Name] == GrimHelm && [Quality] == Set && [Flag] != Ethereal # [ColdResist] == 20 && [Dexterity] == 30 && [Strength] == 20 // Natalya's Totem
-[Name] == ScissorsSuwayyah && [Quality] == Set && [Flag] != Ethereal // Natalya's Mark
+//[Name] == ScissorsSuwayyah && [Quality] == Set && [Flag] != Ethereal // Natalya's Mark
 [Name] == LoricatedMail && [Quality] == Set && [Flag] != Ethereal # [Sockets] == 3 && [Defense] >= 700 // Natalya's Shadow
 [Name] == MeshBoots && [Quality] == Set && [Flag] != Ethereal # [ColdResist] == 25 && [LightResist] == 25 // Natalya's Soul
 

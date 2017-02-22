@@ -42,7 +42,7 @@ function NT_LoadConfig()
 	//------------------------------------------------------------------------------
 
 	NTConfig_Script.push("NTNecroStarterPindlegarden.ntj");  // Raises skellies to get the ball rolling with your Necro.
-		NTConfig_SaferSummons = false;							// set to true summons from one place.  Doesn't summon as many, but is much safer. Use especially if you have low FCR
+		NTConfig_SaferSummons = true;							// set to true summons from one place.  Doesn't summon as many, but is much safer. Use especially if you have low FCR
 
 	//------------------------------------------------------------------------------
 	// Leech, Leech Fighter & Team Botting Settings
@@ -70,7 +70,7 @@ function NT_LoadConfig()
 		NTConfig_UseChatCommandPortal = true;			// Use portal after TakeTpDiablo message? (False will attempt taking first TP made by leader, ignores TakeTpDiablo.)
 
 	NTConfig_Script.push("NTUniversalBaalLeech.ntj");
-		NTConfig_LeechBaal = 1; 						// 1 = Leech Fighter (Tele), 2 = Leech Fighter (Walking), 3 = Passive Leecher (Corner dunce).
+		NTConfig_LeechBaal = 2; 						// 1 = Leech Fighter (Tele), 2 = Leech Fighter (Walking), 3 = Passive Leecher (Corner dunce).
 		NTConfig_TakeTpBaal = "TP up.";				// Message from leader signifying you to take portal. (Must be different than Diablo & Trav tp messages.)
 		NTConfig_LeechPrecast = false; 					// Do you want your leecher to precast?
 		NTConfig_TeleEachWaveHelper = false;            // Teleport bot before each wave to keep merc close (not position based yet)?
@@ -400,10 +400,10 @@ function NT_LoadConfig()
 	NTConfig_FreeSpace = 4;								// Number of free columns. If bot has less than this amount after id'ing, it will go to stash.
 
 	// These numbers correspond to your inventory. Set 0 to keep whatever is there, 1 to have the bot manage the slot.
-	NTConfig_Columns[0] = [1,1,1,1,0,0,0,0,0,0];
-	NTConfig_Columns[1] = [1,1,1,1,0,0,0,0,0,0];
-	NTConfig_Columns[2] = [1,1,1,1,0,0,0,0,0,0];
-	NTConfig_Columns[3] = [1,1,1,1,0,0,0,0,0,0];
+	NTConfig_Columns[0] = [1,1,0,0,0,0,0,0,0,0];
+	NTConfig_Columns[1] = [1,1,0,0,0,0,0,0,0,0];
+	NTConfig_Columns[2] = [1,1,0,0,0,0,0,0,0,0];
+	NTConfig_Columns[3] = [1,1,0,0,0,0,0,0,0,0];
 
 	NTConfig_MinGoldToStash = 100000;					// Maximum gold amount carried before going to stash
 
@@ -642,7 +642,7 @@ function NT_LoadConfig()
 	NTConfig_ExitonDclone = false;						// Exit game on Diablo Walks
 	NTConfig_FastPickit = false;						// This is a new option that causes far less crashes(maybe none).  Is independent of snag delay
 	NTConfig_UseMerc = true;							// Set true if you will use a mercenary, will revive merc at a reviver npc.
-	NTConfig_ResetEnigma = true;  						// Set true to reset enigma when tele bug exists. (Safe.)
+	NTConfig_ResetEnigma = false;  						// Set true to reset enigma when tele bug exists. (Safe.)
 	NTConfig_QuitOnPing = 900;							// Ping threshold. (0 to disable.)
 	NTConfig_PingInterval = 10;							// If ping is greater than threshold for x seconds, exit game. (0 = Disabled,  x = Time Interval In Seconds.)
 	NTConfig_ClearPosition = false;						// Set true if you want to clear area after killing boss.
@@ -839,8 +839,8 @@ function NT_LoadConfig()
 	NTConfig_TeleStomp = false;				// Teleport onto a boss or immune monster.
 	NTConfig_ActiveSummon = true;				// Summon between attacks.
 	NTConfig_Golem = "None";				// Desired golem. 0 or "None" or "Iron" for no golem summoning, 1 or "Clay" for Clay Golem, 2 or "Blood" for Blood Golem, 3 or "Fire" for Fire Golem.
-	NTConfig_SkeletonArmy = 15; 				// Skeleton army size. (Set 0 to disable.)
-	NTConfig_MageArmy = 14; 				// Skeleton Mage army size. (Set 0 to disable.)
+	NTConfig_SkeletonArmy = 16; 				// Skeleton army size. (Set 0 to disable.)
+	NTConfig_MageArmy = 16; 				// Skeleton Mage army size. (Set 0 to disable.)
 	//NTConfig_ReviveArmy = 0; 				// Revive army size. (Set 0 to disable.)
 
 	NTConfig_ExplodeCorpses = 74; 			// 0 = Don't Explode / 74 = Corpse Explosion / 83 = Poison Explosion

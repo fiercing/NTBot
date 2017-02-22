@@ -9,7 +9,7 @@
 
 //RARE/MAGIC JEWELS
 [Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MAXDamage] >= 20 || ([MAXDamage] >= 13 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8))
-[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MINDamage] >= 18 || ([MINDamage] == 8 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8))
+[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MINDamage] >= 18 || ([MINDamage] == 8 && ([IAS] == 15 || [ItemReqPercent] == -15))
 [Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [EnhancedDamage] >= 38 || ([EnhancedDamage] >= 30 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8 || [MAXDamage] >= 15))
 //[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ToHit] >= 75 && ([MaxHP] >= 20 || [Strength] >= 8 || [Dexterity] >= 8 || [FHR] == 7 || [ItemReqPercent] == -15)
 //[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MaxMana] >= 15 && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [ItemReqPercent] == -15)
