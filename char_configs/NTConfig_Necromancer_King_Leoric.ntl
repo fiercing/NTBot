@@ -1,5 +1,6 @@
 var NTConfig_SkeletonArmy;
 var NTConfig_MageArmy;
+var NTConfig_ActiveSummon;
 
 function NT_LoadConfig()
 {
@@ -36,7 +37,7 @@ function NT_LoadConfig()
 	//------------------------------------------------------------------------------
 
 	NTConfig_Script.push("NTNecroStarterPindlegarden.ntj");  // Raises skellies to get the ball rolling with your Necro.
-		NTConfig_SaferSummons = true;							// set to true summons from one place.  Doesn't summon as many, but is much safer. Use especially if you have low FCR
+		NTConfig_SaferSummons = false;							// set to true summons from one place.  Doesn't summon as many, but is much safer. Use especially if you have low FCR
 
 	//------------------------------------------------------------------------------
 	// Leech, Leech Fighter & Team Botting Settings
@@ -815,5 +816,6 @@ function NT_LoadConfig()
 	// Class Specific Settings
 	//------------------------------------------------------------------------------
 
+	NTConfig_ActiveSummon = false;			// Summon between attacks.
 	NTConfig_SkeletonArmy = 16; 				// Skeleton army size. (Set 0 to disable.)
 	NTConfig_MageArmy = 16; 				// Skeleton Mage army size. (Set 0 to disable.)
