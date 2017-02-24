@@ -45,15 +45,15 @@
 //[Name] == Sallet && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 200 && [ColdResist] >= 40 && [FireResist] >= 50 && [LightResist] >= 40										//Ethereal ROCK STOPPER
 //[Name] == Casque && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 200 && [ItemMagicBonus] >= 50																//Ethereal STEALSKULL
 [Name] == GrandCrown && [Quality] == Unique && [Flag] == Ethereal # [LifeLeech] == 12 && [EnhancedDefense] == 200																	//Ethereal CROWN OF THIEVES
-[Name] == GrimHelm && [Quality] == Unique # [LifeLeech] == 8																									//VAMPIRE GAZE
+[Name] == GrimHelm && [Quality] == Unique # [LifeLeech] == 8 && [DamageResist] >= 15 																					//VAMPIRE GAZE
 //[Name] == Shako && [Quality] == Unique && [Flag] != Ethereal # [Defense] >= 100																						//HARLEQUIN CREST
 [Name] == SpiredHelm && [Quality] == Unique																												//SPIRED HELM
 [Name] == Demonhead && [Quality] == Unique # [LifeLeech] == 10																									//ANDARIEL's VISAGE
 [Name] == BoneVisage && [Quality] == Unique # [Sockets] == 2 && [Strength] == 35																						//GIANT SKULL
 [Name] == Tiara && [Quality] == Unique # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 280																		//KIRA'S GUARDIAN
 [Name] == Diadem && [Quality] == Unique && [Flag] != Ethereal # [PassiveLtngMastery] == 15 && [PassiveLtngPierce] == 20																//GRIFFON'S EYE
-[Name] == Corona && [Quality] == Unique # [Sockets] == 2 && [DamageResist] == 15 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 120											//CROWN OF AGES
-
+//[Name] == Corona && [Quality] == Unique # [Sockets] == 2 && [DamageResist] == 15 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 120											//CROWN OF AGES
+[Name] == Corona && [Quality] == Unique 
 //UNIQUE ARMOR
 //[Name] == QuiltedArmor && [Quality] == Unique
 [Name] == SerpentskinArmor && [Quality] == Unique # [ColdResist] == 35																								//SKIN OF THE VIPERMAGI
