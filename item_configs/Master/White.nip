@@ -116,7 +116,7 @@
 // [Name] == CrystalSword && [Quality] <= Superior # ([Sockets] == 4 || [Sockets] == 5)
 // ([Name] == BroadSword || [Name] == LongSword) && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4)													//Spirit
 // ([Name] == BroadSword || [Name] == LongSword) && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 4																								//Spirit
-[Name] == Phaseblade && [Quality] <= Superior && [Flag] != Ethereal # [Enhanceddamage] >= 15 && ([Sockets] == 5 || [Sockets] == 6) // Grief, Last Wish
+[Name] == Phaseblade && [Quality] <= Superior # [Enhanceddamage] >= 0 && [Sockets] == 5 // Grief, Last Wish
 // [Name] == BalrogBlade && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 ||[Sockets] == 4)																			//Oath
 [Name] == Colossusblade && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6) // BotD
 ([Name] == Colossussword || [Name] == Zweihander)&& [Quality] <= Superior && [Flag] != Ethereal # [Enhanceddamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5) // Grief
