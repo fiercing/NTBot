@@ -47,7 +47,7 @@
 [Name] == GrandCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 56 && [MaxHP] >= 25
 
 //MAX DAMAGE GC
-[Name] == GrandCharm && [Quality] == Magic # [MAXDamage] >= 9
+[Name] == GrandCharm && [Quality] == Magic # [MAXDamage] >= 10
 //[Name] == GrandCharm && [Quality] == magic # ([MaxDamage] >= 9 && [ToHit] >= 49) && ([MaxHP] >= 30 || [Strength] >= 6 || [Dexterity] >= 6 || [FHR] >= 12)
 
 //AR/LIFE GC
@@ -88,7 +88,7 @@
 //[Name] == SmallCharm && [Quality] == Magic # [Dexterity] == 2
 
 //MF & GF SC
-[Name] == SmallCharm && [Quality] == Magic # [ItemMagicBonus] >= 6
+[Name] == SmallCharm && [Quality] == Magic # [ItemMagicBonus] >= 7
 //[Name] == SmallCharm && [Quality] == Magic # [ItemGoldBonus] >= 10
 //[Name] == SmallCharm && [Quality] == Magic # [Mana] >= 10 && ([ItemMagicBonus] >= 7 || [ItemGoldBonus] >= 10)
 //[Name] == SmallCharm && [Quality] == Magic # [MAXDamage] == 3 && [ToHit] >= 10 && ([ItemMagicBonus] >= 7 || [ItemGoldBonus] >= 10)

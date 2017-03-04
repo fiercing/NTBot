@@ -37,7 +37,7 @@
 [Name] == TokenOfAbsolution # # [MaxQuantity] == 5
 
 //RUNES
-//[Name] == ElRune # # [MaxQuantity] == 3
+//[Name] == ElRune # # [MaxQuantity] == 1
 //[Name] == EldRune # # [MaxQuantity] == 3
 //[Name] == TirRune # # [MaxQuantity] == 15
 //[Name] == NefRune # # [MaxQuantity] == 3
@@ -48,7 +48,7 @@
 //[Name] == OrtRune # # [MaxQuantity] == 3
 //[Name] == ThulRune # # [MaxQuantity] == 3
 //[Name] == AmnRune # # [MaxQuantity] == 3
-//[Name] == SolRune # # [MaxQuantity] == 3
+//[Name] == SolRune # # [MaxQuantity] == 1
 //[Name] == ShaelRune # # [MaxQuantity] == 3
 //[Name] == DolRune # # [MaxQuantity] == 3
 //[Name] == HelRune # # [MaxQuantity] == 3

@@ -35,7 +35,7 @@ function NT_LoadConfig()
 	// Leech, Leech Fighter & Team Botting Settings
 	//------------------------------------------------------------------------------
 
-	NTConfig_Leader = "ZooParty";						// Leaders name. (Don't set to yourself.)
+	NTConfig_Leader = "Bai_Grozdan";						// Leaders name. (Don't set to yourself.)
 	NTConfig_PartyOnlyLeader = false;					// Party only with leader (NTConfig_Leader)? (If true, NTConfig_PublicMode MUST be set false in the general config section below).
 	NTConfig_PartyMaxTime = 20;							// Time in seconds the leecher has to party with leader before exiting game
 	NTConfig_LeechBo = true; 							// Set false to disable BO & BC cast by leecher.
@@ -75,7 +75,7 @@ function NT_LoadConfig()
 		_FindXPArea = [];								// Area ID's, (2, 3, 4, 5, 6, 7). Set array empty "[]" to leech without grabbing shrines.
 		NTConfig_ClearAroundShrine = false;				// Clear around shrine before going back to town?
 
-		NTConfig_UsePaliAura = 113; 						// Set to the skill # of the aura you want to use.
+		NTConfig_UsePaliAura = 123; 						// Set to the skill # of the aura you want to use.
 		NTConfig_LeechHolyBoltBaal = false;				// Use Holy bolt attack sequence?
 		NTConfig_LeechWalkAround = false;				// Will cause you char to move slightly if Holy Bolt is being blocked.
 
@@ -399,10 +399,10 @@ function NT_LoadConfig()
 	NTConfig_FreeSpace = 4;								// Number of free columns. If bot has less than this amount after id'ing, it will go to stash.
 
 	// These numbers correspond to your inventory. Set 0 to keep whatever is there, 1 to have the bot manage the slot.
-	NTConfig_Columns[0] = [0,0,0,0,0,0,0,0,1,1];
-	NTConfig_Columns[1] = [0,0,0,0,0,0,0,0,1,1];
-	NTConfig_Columns[2] = [0,0,0,0,0,0,0,0,1,1];
-	NTConfig_Columns[3] = [0,0,0,0,0,0,0,0,1,1];
+	NTConfig_Columns[0] = [0,0,0,0,0,0,1,1,1,1];
+	NTConfig_Columns[1] = [0,0,0,0,0,0,1,1,1,1];
+	NTConfig_Columns[2] = [0,0,0,0,0,0,1,1,1,1];
+	NTConfig_Columns[3] = [0,0,0,0,0,0,1,1,1,1];
 
 	NTConfig_MinGoldToStash = 100000;					// Maximum gold amount carried before going to stash
 
@@ -641,7 +641,7 @@ function NT_LoadConfig()
 	NTConfig_ExitonDclone = false;						// Exit game on Diablo Walks
 	NTConfig_FastPickit = false;						// This is a new option that causes far less crashes(maybe none).  Is independent of snag delay
 	NTConfig_UseMerc = true;							// Set true if you will use a mercenary, will revive merc at a reviver npc.
-	NTConfig_ResetEnigma = true;  						// Set true to reset enigma when tele bug exists. (Safe.)
+	NTConfig_ResetEnigma = false;  						// Set true to reset enigma when tele bug exists. (Safe.)
 	NTConfig_QuitOnPing = 900;							// Ping threshold. (0 to disable.)
 	NTConfig_PingInterval = 10;							// If ping is greater than threshold for x seconds, exit game. (0 = Disabled,  x = Time Interval In Seconds.)
 	NTConfig_ClearPosition = false;						// Set true if you want to clear area after killing boss.
@@ -784,15 +784,15 @@ function NT_LoadConfig()
 	// 		* As of Jan 17th: -1 = Disabled, 0 = Normal Attack.
 	//------------------------------------------------------------------------------
 
-	NTConfig_AttackSkill[0] = 112;    // First skill. Set to 0 if you won't
-    NTConfig_AttackSkill[1] = 112;    // Primary skill to boss.
-    NTConfig_AttackSkill[2] = 113;    // Primary aura to boss. Set to 0 if you won't
-    NTConfig_AttackSkill[3] = 112;    // Primary skill to others.
-    NTConfig_AttackSkill[4] = 113;    // Primary aura to others. Set to 0 if you won't
-    NTConfig_AttackSkill[5] = 101;    // Secondary skill in case monster is immune to primary skill. Set to 0 if you won't
-    NTConfig_AttackSkill[6] = 0;    // Secondary aura. Set to 0 if you won't
-    NTConfig_AttackSkill[7] = 0;    // Tertiary skill in case monster is immune to primary skill. Set to 0 if you won't
-    NTConfig_AttackSkill[8] = 0;    // Tertiary aura. Set to 0 if you won't
+	NTConfig_AttackSkill[0] = -1;    // First skill. Set to 0 if you won't
+    NTConfig_AttackSkill[1] = 111;    // Primary skill to boss.
+    NTConfig_AttackSkill[2] = 123;    // Primary aura to boss. Set to 0 if you won't
+    NTConfig_AttackSkill[3] = 111;    // Primary skill to others.
+    NTConfig_AttackSkill[4] = 123;    // Primary aura to others. Set to 0 if you won't
+    NTConfig_AttackSkill[5] = -1;    // Secondary skill in case monster is immune to primary skill. Set to 0 if you won't
+    NTConfig_AttackSkill[6] = -1;    // Secondary aura. Set to 0 if you won't
+    NTConfig_AttackSkill[7] = -1;    // Tertiary skill in case monster is immune to primary skill. Set to 0 if you won't
+    NTConfig_AttackSkill[8] = -1;    // Tertiary aura. Set to 0 if you won't
 
 	
 	prewavespot = [15092, 5028];	// Pre-Wave standing (X,Y) coordinates. (For Baal Scripts.)
@@ -804,12 +804,6 @@ function NT_LoadConfig()
 
 	NTConfig_HighMaxAttacks = 300;						// Maximum number of attacks (HIGH) before skipping.
 	NTConfig_LowMaxAttacks = 20;						// Maximum number of attacks (LOW) before skipping.
-
-	MonstersToAttackFirst = 							// Monster ID's to attack first. (Monsters which resurrect / spawn others are good choices.)
-	[58,59,60,61,62,101,102,103,104,190,191,
-	192,193,194,206,207,208,209,228,239,240,
-	241,278,279,280,281,282,283,303,312,480,
-	481,482,483,484,485,486,529];
 
 	NTConfig_AttackingThis = false; // Used to say target monsters ID/Name - Primarily for Dev purposes
 

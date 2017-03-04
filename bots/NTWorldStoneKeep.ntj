@@ -103,7 +103,7 @@ function NTMain(){
 			OpenChestsInArea();
 	}
 	//End of things added by Chairman
-	if(!NTM_MoveTo(me.areaid, 15112, 5068)){
+	if(!NTM_MoveTo(me.areaid, 15118, 5003)){
 		NTC_SendMsgToScript("NTBotGame.ntj", "NTM_MoveTo()");
 		return;
 	}
