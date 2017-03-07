@@ -35,7 +35,7 @@
 [Name] == BattleBoots && [Quality] == Unique && [Flag] != Ethereal # [ItemMagicBonus] >= 48																				//WAR TRAVELER
 [Name] == WarBoots && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 195																				//GORE RIDER
 [Name] == ScarabshellBoots && [Quality] == Unique # [Strength] >= 15 && [PoisonResist] >= 50																				//SANDSTORM TREK
-[Name] == BoneweaveBoots && [Quality] == Unique && [Flag] != Ethereal # [SkillSkeletonMastery] >= 2 && [Strength] >= 20																//MARROWWALK
+[Name] == BoneweaveBoots && [Quality] == Unique && [Flag] != Ethereal # [SkillSkeletonMastery] >= 2 && [Strength] >= 20 && [Dexterity] >= 20												//MARROWWALK
 [Name] == MyrmidonGreaves && [Quality] == Unique && [Flag] != Ethereal # [ShadowDisciplinesSkillTab] >= 2 && [Dexterity] >= 25														//SHADOW DANCER
 
 //UNIQUE HELMS
@@ -49,7 +49,7 @@
 [Name] == GrimHelm && [Quality] == Unique # [LifeLeech] == 8 && [DamageResist] >= 15 																					//VAMPIRE GAZE
 //[Name] == Shako && [Quality] == Unique && [Flag] != Ethereal # [Defense] >= 100																						//HARLEQUIN CREST
 //[Name] == SpiredHelm && [Quality] == Unique																												//SPIRED HELM
-[Name] == Demonhead && [Quality] == Unique # [LifeLeech] == 10																									//ANDARIEL's VISAGE
+[Name] == Demonhead && [Quality] == Unique # [LifeLeech] == 10 && [Strength] == 30																						//ANDARIEL's VISAGE
 [Name] == BoneVisage && [Quality] == Unique # [Sockets] == 2 && [Strength] == 35																						//GIANT SKULL
 [Name] == Tiara && [Quality] == Unique # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 280																		//KIRA'S GUARDIAN
 [Name] == Diadem && [Quality] == Unique && [Flag] != Ethereal # [PassiveLtngMastery] == 15 && [PassiveLtngPierce] == 20																//GRIFFON'S EYE

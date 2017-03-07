@@ -208,11 +208,11 @@ function UDL_OpenDeSeisSealInt(type) {
 
 
 		if (type === 1) {
-			var sx = [7791, 7783, 7800, 7809, 7785, 7773, 7773, 7776, 7794, 7811, 7817, 7815, 7798]; // Shape of "2"
-			var sy = [5265, 5256, 5247, 5232, 5230, 5222, 5212, 5194, 5194, 5193, 5177, 5157, 5155];
+			var sx = [7767, 7791, 7783, 7800, 7809, 7785, 7773, 7773, 7776, 7794, 7811, 7817, 7815, 7798]; // Shape of "2"
+			var sy = [5281, 5265, 5256, 5247, 5232, 5230, 5222, 5212, 5194, 5194, 5193, 5177, 5157, 5155];
 		} else {
-			var sx = [7786, 7801, 7786, 7787, 7810, 7811, 7810, 7790, 7774, 7773, 7794]; // shape of an "S" or "5"
-			var sy = [5263, 5249, 5245, 5227, 5233, 5215, 5198, 5194, 5181, 5156, 5154];
+			var sx = [7767, 7786, 7801, 7786, 7787, 7810, 7811, 7810, 7790, 7774, 7773, 7794]; // shape of an "S" or "5"
+			var sy = [5281, 5263, 5249, 5245, 5227, 5233, 5215, 5198, 5194, 5181, 5156, 5154];
 		}
 		for (var i = 0; i < sx.length; i += 1) {
 			NTM_MoveTo(108, sx[i], sy[i]);
@@ -239,6 +239,15 @@ function UDL_OpenDeSeisSealInt(type) {
 	if(NTConfig_IdInField){
 		NT_FieldID();
 	} return NTM_MoveTo(108, 7800, 5255);
+	if(NTConfig_IdInField){
+		NT_FieldID();
+	}
+	if (type == 1){
+		NTM_MoveTo(108, 7800, 5255);
+	} else {
+		NTM_MoveTo(108, 7811, 5200);
+		NTM_MoveTo(108, 7800, 5255);
+	}
 }
 
 function UDL_OpenVenomSealInt(type) {

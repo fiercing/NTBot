@@ -18,6 +18,7 @@
 [Type] == Jewel && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 60
 [Type] == Jewel && [Quality] == Magic # ([ColdResist] == 30 || [FireResist] == 30 || [LightResist] == 30 || [PoisonResist] == 30) && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8)
 //[Name] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [PoisonMinDam] >= 20
+[Name] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [IAS] == 15 && ([ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 60 || [EnhancedDamage] >= 35)
 
 //MAGIC RINGS
 //[Type] == Ring && [Quality] == Magic # [ItemMagicBonus] >= 40

@@ -285,8 +285,8 @@ function NT_LoadConfig()
 		NTConfig_ClearIcyCellar = 0;					// 0 : SnapChip Only, 1 : Clear All, 2 : Clear While Skipping Regular Monsters, -1 : Disable
 	//NTConfig_Script.push("NTWorldstoneKeep.ntj");
 		NTConfig_ClearWorldStoneKeep = 0;				// 0 : Baal Run Only, 1 : Clear Path 2 : Clear All (From Waypoint)
-		NTConfig_MakeWSK3TP = true; 					// Make WS3 TP for help clearing the Throne
-		NTConfig_CheckSoulKillers = true; 				// End script if Stygian Dolls are found in Throne
+		NTConfig_MakeWSK3TP = false; 					// Make WS3 TP for help clearing the Throne
+		NTConfig_CheckSoulKillers = false; 				// End script if Stygian Dolls are found in Throne
 		NTConfig_MakeHotTP = true; 						// Make a hot TP before clearing Throne
 		NTConfig_PreWaveTele = false; 					// Teleport before wave to keep merc close
 		NTConfig_Wave2PSNCheck = false; 				// Heal after wave 2 if poisoned
