@@ -9,11 +9,11 @@
 //UNIQUE GLOVES
 //[Name] == LeatherGloves && [Quality] == Unique && [Flag] != Ethereal																								//The Hand of Broc
 //[Name] == HeavyGloves && [Quality] == Unique && [Flag] != Ethereal																								//BLOOD FIST
-[Name] == ChainGloves && [Quality] == Unique && [Flag] != Ethereal # [ItemMagicBonus] == 40																				//CHANCE GUARDS
+//[Name] == ChainGloves && [Quality] == Unique && [Flag] != Ethereal # [ItemMagicBonus] == 40																				//CHANCE GUARDS
 [Name] == LightGauntlets && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] == 30																				//MAGEFIST
 //[Name] == Gauntlets && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] == 20																				//FROSTBURN
 [Name] == VampireboneGloves && [Quality] == Unique && [Flag] != Ethereal # [Strength] == 15 && [LifeLeech] == 10																	//DRACUL'S GRASP
-[Name] == Vambraces && [Quality] == Unique && [Flag] != Ethereal # [LifeLeech] == 7 && [ManaLeech] == 7 && [EnhancedDefense] == 120														//SOUL DRAINER
+//[Name] == Vambraces && [Quality] == Unique && [Flag] != Ethereal # [LifeLeech] == 7 && [ManaLeech] == 7 && [EnhancedDefense] == 120														//SOUL DRAINER
 [Name] == OgreGauntlets && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDamage] == 60 && [Strength] == 20																	//STEELREND
 
 //UNIQUE BELTS\\

@@ -459,7 +459,7 @@ function NT_LoadConfig()
 	NTConfig_NIPFilePath.push("Master/White.nip");
 	NTConfig_NIPFilePath.push("Master/Runeword.nip");
 
-	NTConfig_SnagRange = 40;							// Radius to check for dropped items. 40 is a good number here
+	NTConfig_SnagRange = 20;							// Radius to check for dropped items. 40 is a good number here
 
 	//------------------------------------------------------------------------------
 	// Runeword configuration

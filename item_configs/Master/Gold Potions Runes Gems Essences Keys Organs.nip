@@ -30,8 +30,8 @@
 [Name] == DiablosHorn
 
 //RESPEC ESSENCES
-//[Name] == TwistedEssenceOfSuffering # # [MaxQuantity] == 2
-//[Name] == ChargedEssenceOfHatred # # [MaxQuantity] == 2
+[Name] == TwistedEssenceOfSuffering # # [MaxQuantity] == 1
+[Name] == ChargedEssenceOfHatred # # [MaxQuantity] == 2
 //[Name] == BurningEssenceOfTerror # # [MaxQuantity] == 1
 //[Name] == FesteringEssenceOfDestruction # # [MaxQuantity] == 1
 [Name] == TokenOfAbsolution # # [MaxQuantity] == 5

@@ -120,15 +120,8 @@ function NTMain(){
 	NTA_ClearPosition(20, true, 2);
 	if(NTConfig_PublicMode){
 		if(NTConfig_MakeHotTP){
-			NTM_MoveTo(me.areaid, 15091, 5006);
-			NTC_PingDelay(1000);
-			NTA_ClearPosition(20, true, 2);
-			NTM_MoveTo(me.areaid, 15091, 5006);
-			if(NTThrone_Announce)
-				_announceTMobs();
-			NTM_MakeTP();
-			Say(Baal_HotTp);
-			NTC_Delay(500);
+			NTA_ClearPosition(40, true, 2);
+			NTM_MoveTo(me.areaid, 15118, 5003);
 			NTP_DoPrecast(true);
 		}
 	}

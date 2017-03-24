@@ -95,7 +95,7 @@
 // WHITE TORNADO HELMS
 [Type] == Pelt && [Quality] <= Superior && [Flag] != Ethereal # [Skilltornado] == 3 && (([Skillcyclonearmor] >= 2)|| ([Skillhurricane] >= 2)|| ([Skilloaksage] >= 2))&& ([Sockets] == 0 || [Sockets] == 3) // Delirium
 // WHITE ARMAGEDDON HELMS
-[Type] == Pelt && [Quality] <= Superior && [Flag] != Ethereal # [Skillarmageddon] == 3 && [Skilloaksage] >= 2 && ([Sockets] == 0 || [Sockets] == 2 || [Sockets] == 3) // Lore, Delirium
+[Type] == Pelt && [Quality] <= Superior && [Flag] != Ethereal # [Skillarmageddon] == 3 && [Skilloaksage] >= 2 && [Sockets] != 1 // Lore, Delirium
 // WHITE WEAPONS
 // [Name] == DoubleAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5)																			//CtA
 // ([Name] == MilitaryPick || [Name] == WarAxe) && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																		//CtA
@@ -108,7 +108,7 @@
 // [Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)																														//Grief
 // [Name] == GloriousAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																								//Death
 // [Name] == Decapitator && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5)																			//Death
-[Name] == Thundermaul && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 0 && [Sockets] == 6 // BotD
+[Name] == Thundermaul && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 6) // BotD
 // [Name] == CrystalSword && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)																		//Spirit, CtA
 // [Name] == CrystalSword && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 4 || [Sockets] == 5)																									//CtA
 // [Name] == CrystalSword && [Quality] <= Superior # [Sockets] == 5
@@ -125,7 +125,7 @@
 [Name] == Colossusvoulge && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && [Sockets] == 4 // Infinity, Insight, Pride
 // [Name] == ColossusVoulge && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 4)																								//Infinity, Insight, Pride
 // [Name] == Colossusvoulge && [Quality] <= Superior # [Sockets] == 4 // Infinity, Insight, Pride
-[Name] == Crypticaxe && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5) // Infinity, Insight, Pride, Obedience, Doom
+// [Name] == Crypticaxe && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5) // Infinity, Insight, Pride, Obedience, Doom
 [Name] == Crypticaxe && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 5 // Infinity, Insight, Pride, Obedience, Doom
 [Name] == Warpike && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 4 || [Sockets] == 6) // Infinity, Insight, Pride, Obedience, Doom
 // [Name] == GreatPoleaxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4 || [Sockets] == 5 || [Sockets] == 6)														//Infinity, Insight, Pride, BotD
