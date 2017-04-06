@@ -61,10 +61,10 @@
 [Name] == LargeCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 24 && ([MaxHP] >= 15 || [FHR] >= 8)
 
 //MAX DAMAGE LC
-[Name] == LargeCharm && [Quality] == Magic # [MAXDamage] >= 6 && [ToHit] >= 30
+[Name] == LargeCharm && [Quality] == Magic # [MAXDamage] >= 7
 
 //AR/LIFE LC
-[Name] == LargeCharm && [Quality] == Magic # [ToHit] >= 75 && [MaxHP] >= 33
+//[Name] == LargeCharm && [Quality] == Magic # [ToHit] >= 75 && [MaxHP] >= 33
 
 //LIFE/MANA LC
 //[Name] == LargeCharm && [Quality] == Magic # [MaxHP] >= 30 && [Mana] >= 30
@@ -88,7 +88,7 @@
 //[Name] == SmallCharm && [Quality] == Magic # [Dexterity] == 2
 
 //MF & GF SC
-[Name] == SmallCharm && [Quality] == Magic # [ItemMagicBonus] >= 7
+//[Name] == SmallCharm && [Quality] == Magic # [ItemMagicBonus] >= 7
 //[Name] == SmallCharm && [Quality] == Magic # [ItemGoldBonus] >= 10
 //[Name] == SmallCharm && [Quality] == Magic # [Mana] >= 10 && ([ItemMagicBonus] >= 7 || [ItemGoldBonus] >= 10)
 //[Name] == SmallCharm && [Quality] == Magic # [MAXDamage] == 3 && [ToHit] >= 10 && ([ItemMagicBonus] >= 7 || [ItemGoldBonus] >= 10)
@@ -98,18 +98,18 @@
 [Name] == SmallCharm && [Quality] == Magic # ([FRW] >= 3 || [FHR] >= 5) && ([ColdResist] >= 10 || [FireResist] >= 10 || [LightResist] >= 10 || [PoisonResist] >= 10)
 //[Name] == SmallCharm && [Quality] == Magic # ([ItemMagicBonus] >= 6 || [ItemGoldBonus] >= 10) && ([ColdResist] >= 10 || [FireResist] >= 10 || [LightResist] >= 10 || [PoisonResist] >= 10)
 [Name] == SmallCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 20
-[Name] == SmallCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 16 && ([MaxHP] >= 10 || [FRW] == 3 || [FHR] == 5 || [ItemMagicBonus] >= 5)
+[Name] == SmallCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 16 && ([MaxHP] >= 10 || [FRW] == 3 || [FHR] == 5)
 //[Name] == SmallCharm && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 16 && ([ItemGoldBonus] == 10 || [Strength] == 2 || [Dexterity] == 2)
 
 //MAX DAMAGE SC
-[Name] == SmallCharm && [Quality] == Magic # [MAXDamage] >= 3
+//[Name] == SmallCharm && [Quality] == Magic # [MAXDamage] >= 3
 
 //AR SC
 //[Name] == SmallCharm && [Quality] == Magic # [ToHit] >= 25 && [MaxHP] >= 15
-[Name] == SmallCharm && [Quality] == Magic # [ToHit] >= 35 && ([FHR] == 5 || [FRW] == 3)
+//[Name] == SmallCharm && [Quality] == Magic # [ToHit] >= 35 && ([FHR] == 5 || [FRW] == 3)
 //[Name] == SmallCharm && [Quality] == Magic # [ToHit] >= 34 && ([Strength] == 2 || [Dexterity] == 2)
 
 //POISON SC
 //[Name] == SmallCharm && [Quality] == Magic # [PoisonMINDam] >= 175
 //[Name] == SmallCharm && [Quality] == Magic # [PoisonMAXDam] >= 175
-[Name] == SmallCharm && [Quality] == Magic # [PoisonMaxDam] >= 100
+//[Name] == SmallCharm && [Quality] == Magic # [PoisonMaxDam] >= 100

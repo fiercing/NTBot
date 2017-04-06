@@ -50,7 +50,7 @@
 //[Name] == Shako && [Quality] == Unique && [Flag] != Ethereal # [Defense] >= 100																						//HARLEQUIN CREST
 //[Name] == SpiredHelm && [Quality] == Unique																												//SPIRED HELM
 [Name] == Demonhead && [Quality] == Unique # [LifeLeech] == 10 && [Strength] == 30																						//ANDARIEL's VISAGE
-[Name] == BoneVisage && [Quality] == Unique # [Sockets] == 2 && [Strength] == 35																						//GIANT SKULL
+[Name] == BoneVisage && [Quality] == Unique # [Sockets] == 2 && [Strength] >= 30																						//GIANT SKULL
 [Name] == Tiara && [Quality] == Unique # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 280																		//KIRA'S GUARDIAN
 [Name] == Diadem && [Quality] == Unique && [Flag] != Ethereal # [PassiveLtngMastery] == 15 && [PassiveLtngPierce] == 20																//GRIFFON'S EYE
 //[Name] == Corona && [Quality] == Unique # [Sockets] == 2 && [DamageResist] == 15 && [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 120											//CROWN OF AGES
@@ -60,12 +60,12 @@
 [Name] == SerpentskinArmor && [Quality] == Unique # [ColdResist] == 35																								//SKIN OF THE VIPERMAGI
 //[Name] == Cuirass && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 190																				//DURIEL'S SHELL
 //[Name] == Cuirass && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 190																				//Ethereal DURIEL'S SHELL
-[Name] == MeshArmor && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 210																								//SHAFTSTOP
+[Name] == MeshArmor && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 210																				//SHAFTSTOP
 //[Name] == RussetArmor && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 190																				//SKULLDER'S IRE
-[Name] == TemplarCoat && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 190																								//GUARDIAN ANGEL
+[Name] == TemplarCoat && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 190																				//GUARDIAN ANGEL
 //[Name] == SharktoothArmor && [Quality] == Unique && [Flag] != Ethereal # [EnhancedDefense] >= 215																			//TOOTHROW
 //[Name] == SharktoothArmor && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 215																			//Ethereal TOOTHROW
-[Name] == DuskShroud && [Quality] == Unique # [PassiveFireMastery] == 15 && ([SkillFirebolt] >= 3 || [SkillFireball] >= 3 || [SkillMeteor] >= 3)											//ORMUS' ROBES
+[Name] == DuskShroud && [Quality] == Unique # [PassiveFireMastery] == 15 && ([SkillFirebolt] >= 3 || [SkillFireball] >= 3 || [SkillMeteor] >= 3 || [SkillEnchant] >= 3)								//ORMUS' ROBES
 [Name] == DuskShroud && [Quality] == Unique # [PassiveLtngMastery] == 15 && ([SkillChainLightning] >= 3 || [SkillLightning] >= 3 || [SkillEnergyShield] >= 3)									//ORMUS' ROBES
 [Name] == DuskShroud && [Quality] == Unique # [PassiveColdMastery] == 15 && ([SkillBlizzard] >= 3 || [SkillFrozenOrb] >= 3 || [SkillIceBlast] >= 3)											//ORMUS' ROBES
 //[Name] == WireFleece && [Quality] == Unique && [Flag] == Ethereal # [EnhancedDefense] >= 150 && [NormalDamageReduction] >= 20 && [MagicDamageReduction] >= 20									//THE GLADIATOR'S BANE

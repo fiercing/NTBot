@@ -17,11 +17,11 @@
 //[Name] == Key # # [MaxQuantity] == 12
 
 //UBER QUEST KEYS
-//[Name] == KeyOfTerror
+[Name] == KeyOfTerror
 //[Name] == KeyOfHate
 //[Name] == KeyOfDestruction
 //[Name] == KeyOfTerror # # [MaxQuantity] == 3
-//[Name] == KeyOfHate # # [MaxQuantity] == 3
+[Name] == KeyOfHate # # [MaxQuantity] == 3
 //[Name] == KeyOfDestruction # # [MaxQuantity] == 3
 
 //UBER QUEST ORGANS
@@ -30,7 +30,7 @@
 [Name] == DiablosHorn
 
 //RESPEC ESSENCES
-[Name] == TwistedEssenceOfSuffering # # [MaxQuantity] == 1
+[Name] == TwistedEssenceOfSuffering # # [MaxQuantity] == 2
 [Name] == ChargedEssenceOfHatred # # [MaxQuantity] == 2
 //[Name] == BurningEssenceOfTerror # # [MaxQuantity] == 1
 //[Name] == FesteringEssenceOfDestruction # # [MaxQuantity] == 1

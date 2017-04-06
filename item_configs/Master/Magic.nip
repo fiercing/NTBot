@@ -13,8 +13,8 @@
 [Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [EnhancedDamage] >= 38 || ([EnhancedDamage] >= 30 && ([IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8 || [MAXDamage] >= 15))
 //[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ToHit] >= 75 && ([MaxHP] >= 20 || [Strength] >= 8 || [Dexterity] >= 8 || [FHR] == 7 || [ItemReqPercent] == -15)
 //[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [MaxMana] >= 15 && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [ItemReqPercent] == -15)
-[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 67 && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8)
-[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 80
+[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 56 && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8)
+[Type] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] >= 60
 [Type] == Jewel && [Quality] == Magic # [ColdResist]+[FireResist]+[LightResist]+[PoisonResist] == 60
 [Type] == Jewel && [Quality] == Magic # ([ColdResist] == 30 || [FireResist] == 30 || [LightResist] == 30 || [PoisonResist] == 30) && ([MaxHP] >= 20 || [Strength] >= 9 || [Dexterity] >= 9 || [FHR] == 7 || [IAS] == 15 || [ItemReqPercent] == -15 || [MINDamage] >= 8)
 //[Name] == Jewel && ([Quality] == Rare || [Quality] == Magic) # [PoisonMinDam] >= 20

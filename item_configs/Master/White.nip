@@ -103,12 +103,13 @@
 // [Name] == WarSpike && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																								//Grief
 // [Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 4 || [Sockets] == 5 || [Sockets] == 6)									//Oath, Death, BotD
 // [Name] == BerserkerAxe && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 5 || [Sockets] == 6)																				//Death, BotD
-[Name] == Berserkeraxe && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 6 // Last Wish
+[Name] == EttinAxe && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 5) // Last Wish
+[Name] == Berserkeraxe && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 5 || [Sockets] == 6 // Last Wish
 // [Name] == Berserkeraxe && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 6 // HoJ, Grief
 // [Name] == BerserkerAxe && [Quality] <= Superior && [Flag] != Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)																														//Grief
 // [Name] == GloriousAxe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 5																								//Death
 // [Name] == Decapitator && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 5)																			//Death
-[Name] == Thundermaul && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 0 || [Sockets] == 6) // BotD
+[Name] == Thundermaul && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 6 // BotD
 // [Name] == CrystalSword && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 4 || [Sockets] == 5)																		//Spirit, CtA
 // [Name] == CrystalSword && [Quality] <= Superior && [Flag] == Ethereal # ([Sockets] == 4 || [Sockets] == 5)																									//CtA
 // [Name] == CrystalSword && [Quality] <= Superior # [Sockets] == 5
@@ -118,7 +119,7 @@
 // [Name] == BalrogBlade && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 4																			//Oath
 [Name] == Colossusblade && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && [Sockets] == 6 // BotD
 [Name] == Colossussword && [Quality] <= Superior && [Flag] != Ethereal # [Enhanceddamage] >= 15 && [Sockets] == 5 // Grief
-[Name] == Colossussword && [Quality] <= Superior && [Flag] == Ethereal # [Enhanceddamage] >= 15 && [Sockets] == 5 // Death
+[Name] == Colossussword && [Quality] <= Superior && [Flag] == Ethereal # [Sockets] == 5 // Death
 // [Name] == Flail && [Quality] <= Superior && [Flag] != Ethereal # [Sockets] == 4 || [Sockets] == 5														//HotO, CtA
 // ([Name] == ArchonStaff || [Name] == GhostSpear || [Name] == WarPike) && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && ([Sockets] == 0 || [Sockets] == 6)							//BotD
 // [Name] == Scythe && [Quality] <= Superior && [Flag] == Ethereal # [EnhancedDamage] >= 15 && [Sockets] == 4																									//Infinity
